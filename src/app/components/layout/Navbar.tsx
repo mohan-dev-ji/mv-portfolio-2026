@@ -48,7 +48,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed w-full top-0 backdrop-blur-md z-50 border-b-4 border-light-accent dark:border-dark-accent h-20">
+    <header className="fixed w-full top-0 backdrop-blur-md z-50 border-b-custom border-light-accent dark:border-dark-accent h-20">
       <nav className="bg-light-background dark:bg-dark-background bg-opacity-60 mx-auto px-4 h-full flex justify-between items-center">
         {/* Left: Name acting as Home button */}
         <div className="text-p-bold text-light-secondary dark:text-dark-secondary">

@@ -29,8 +29,8 @@ export default function Footer() {
   return (
     <footer className="max-w-[910px] mx-auto bg-light-background dark:bg-dark-background">
       <div className="hidden md:block w-full bg-light-background dark:bg-dark-background py-12">
-        <div className="max-w-[910px] mx-auto">
-          <div className="w-full h-1 bg-light-accent dark:bg-dark-accent mb-8"></div>
+        <div className="max-w-[910px] mx-auto border-t-custom border-light-accent dark:border-dark-accent">
+          <div className="w-full h-1  mb-8"></div>
           <div className="grid grid-cols-4 gap-8">
             <div>
               <p className="text-p-bold text-light-primary dark:text-dark-primary">Mohan Veraitch</p>
@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full border-t-4 border-light-accent dark:border-dark-accent">
+      <div className="w-full border-t-custom border-light-accent dark:border-dark-accent">
         <div className="max-w-[910px] mx-auto px-4 flex justify-between items-center p-12">
           <p className="text-light-secondary dark:text-dark-secondary text-sm">
             © {currentYear} Mohan Veraitch
