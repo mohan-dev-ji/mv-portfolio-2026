@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import ButtonLink from "@/app/components/ui/ButtonLink";
 
 export default function PositioningSection() {
   return (
@@ -27,12 +27,7 @@ export default function PositioningSection() {
               applications. I built Mo Speech from concept to live product. I&apos;m looking to bring
               that same end-to-end ownership to a team that moves fast and cares about craft.
             </p>
-            <Link
-              href="/contact"
-              className="inline-block border border-accent text-accent px-6 py-3 text-sm hover:bg-accent hover:text-btn-text transition-colors"
-            >
-              Get in touch →
-            </Link>
+            <ButtonLink href="/contact" label="Get in touch" />
           </div>
 
         </div>

@@ -9,7 +9,8 @@
   --color-primary:  theme('colors.zinc.800');
   --color-secondary:theme('colors.zinc.500');
   --color-muted:    theme('colors.zinc.400');
-  --color-accent:   theme('colors.lime.500');
+  --color-accent:       theme('colors.lime.500');
+  --color-accent-hover: theme('colors.lime.400');
   --color-border:   theme('colors.zinc.300');
   --color-card:     theme('colors.zinc.100');
   --color-image-bg: theme('colors.zinc.300');
@@ -22,7 +23,8 @@
   --color-primary:  theme('colors.zinc.300');
   --color-secondary:theme('colors.zinc.400');
   --color-muted:    theme('colors.zinc.500');
-  --color-accent:   theme('colors.lime.500');
+  --color-accent:       theme('colors.lime.500');
+  --color-accent-hover: theme('colors.lime.400');
   --color-border:   theme('colors.zinc.700');
   --color-card:     theme('colors.zinc.800');
   --color-image-bg: theme('colors.zinc.600');
@@ -33,10 +35,10 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
   }
 
   body {
-    @apply font-mono bg-bg text-primary;
+    @apply font-mono bg-bg text-primary overflow-x-hidden;
   }
 }
