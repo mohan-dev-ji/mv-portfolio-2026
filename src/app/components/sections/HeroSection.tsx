@@ -17,7 +17,7 @@ export default function HeroSection() {
               <span className="text-accent">&gt;</span>
               <span className="text-secondary"> Design Engineer</span>
             </p>
-            <p className="text-body">
+            <p className="text-body-sm md:text-body">
               <span className="text-accent">~/</span>
               <span className="text-secondary"> London</span>
             </p>

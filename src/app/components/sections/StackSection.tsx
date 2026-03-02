@@ -1,48 +1,48 @@
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const stackItems = [
   "React",          "Figma",          "Tailwind CSS",
   "Next.js",        "After Effects",  "Shad CN",
   "Typescript",     "Blender",        "Python",
   "Cursor",         "Photoshop",      "Bash",
-  "Claude Code",    "Premiere",       "CLI",
-  "Convex",         "Da Vinci Resolve","Linux",
+  "Claude Code",    "Premiere",       "HTML",
+  "Convex",         "Da Vinci",       "CSS",
 ];
 
 export default function StackSection() {
   return (
-    <section className="mt-section">
-      <div className="max-w-container mx-auto px-6">
-        <div className="flex items-start justify-between gap-section">
+    <section className="mt-section max-w-container mx-auto px-6">
+      <div className="flex items-start gap-section">
 
-          <div className="flex-1">
-            <div className="mb-1">
-              <span className="text-h2 font-semibold text-accent">%</span>
-              <span className="text-h2 font-semibold text-primary">_</span>
-            </div>
-            <h2 className="text-h2 text-primary mb-item-gap">The Stack</h2>
-
-            <div className="grid grid-cols-3 gap-x-12 gap-y-3">
-              {stackItems.map((item) => (
-                <div key={item} className="flex items-center gap-2 text-sm">
-                  <span className="text-accent">→</span>
-                  <span className="text-primary">{item}</span>
-                </div>
-              ))}
-            </div>
+        {/* Text */}
+        <div className="flex-1">
+          <div className="mb-item-gap">
+            <span className="text-h2 font-semibold text-accent">%</span>
+            <span className="text-h2 font-semibold text-primary">_</span>
           </div>
-
-          <div className="w-64 flex-shrink-0 opacity-60">
-            <Image
-              src="/images/Geo/stack.png"
-              alt=""
-              width={256}
-              height={300}
-              className="w-full h-auto"
-            />
+          <h2 className="text-h2 text-primary mb-item-gap">The Stack</h2>
+          <div className="grid grid-cols-3 gap-x-0 gap-y-3">
+            {stackItems.map((item, i) => (
+              <div key={i} className="flex items-center gap-1 text-sm">
+                <ArrowRight size={16} className="text-accent" />
+                <span className="text-primary">{item}</span>
+              </div>
+            ))}
           </div>
-
         </div>
+
+        {/* Image */}
+        <div className="hidden md:block flex-1 opacity-60">
+          <Image
+            src="/images/Geo/stack.png"
+            alt=""
+            width={629}
+            height={486}
+            className="w-full h-auto"
+          />
+        </div>
+
       </div>
     </section>
   );
