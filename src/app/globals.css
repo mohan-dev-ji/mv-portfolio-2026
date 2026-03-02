@@ -2,21 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom global styles */
+/* ── Design tokens ────────────────────────────────────── */
+
+:root {
+  --color-bg:       theme('colors.zinc.200');
+  --color-primary:  theme('colors.zinc.800');
+  --color-secondary:theme('colors.zinc.500');
+  --color-muted:    theme('colors.zinc.400');
+  --color-accent:   theme('colors.lime.500');
+  --color-border:   theme('colors.zinc.300');
+  --color-card:     theme('colors.zinc.100');
+  --color-image-bg: theme('colors.zinc.300');
+  --color-btn-text: theme('colors.gray.900');
+
+}
+
+.dark {
+  --color-bg:       theme('colors.zinc.900');
+  --color-primary:  theme('colors.zinc.300');
+  --color-secondary:theme('colors.zinc.400');
+  --color-muted:    theme('colors.zinc.500');
+  --color-accent:   theme('colors.lime.500');
+  --color-border:   theme('colors.zinc.700');
+  --color-card:     theme('colors.zinc.800');
+  --color-image-bg: theme('colors.zinc.600');
+  --color-btn-text: theme('colors.gray.900');
+}
+
+/* ── Base ────────────────────────────────────────────── */
+
 @layer base {
   html {
     @apply scroll-smooth;
   }
+
   body {
-    @apply bg-light-background dark:bg-dark-background text-light-primary dark:text-dark-primary;
+    @apply font-mono bg-bg text-primary;
   }
 }
-
-/* @layer components {
-  .btn-primary {
-    @apply bg-primary text-white px-4 py-2 rounded-md;
-  }
-  .section-title {
-    @apply text-primary text-heading-2 font-bold mb-4;
-  }
-} */
