@@ -12,7 +12,7 @@ const stackItems = [
 
 export default function StackSection() {
   return (
-    <section className="mt-section max-w-container mx-auto px-6">
+    <section className="mt-section max-w-container mx-auto px-gutter-sm md:px-gutter">
       <div className="flex items-start gap-section">
 
         {/* Text */}

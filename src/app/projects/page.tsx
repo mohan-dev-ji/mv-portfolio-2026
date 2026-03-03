@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="max-w-container mx-auto px-gutter">
+      <section className="max-w-container mx-auto px-gutter-sm md:px-gutter">
         <div className="relative mt-section mb-section min-h-[280px]">
           <h1 className="text-display-sm md:text-display font-semibold leading-none text-primary">
             Projects
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Live */}
-      <section className="mt-section max-w-container mx-auto px-gutter">
+      <section className="mt-section max-w-container mx-auto px-gutter-sm md:px-gutter">
         <h2 className="text-h2-sm md:text-h2 text-primary inline-block border-b-2 border-primary pb-1 mb-item-gap">
           Live
         </h2>
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Work In Progress */}
-      <section className="mt-section max-w-container mx-auto px-gutter">
+      <section className="mt-section max-w-container mx-auto px-gutter-sm md:px-gutter">
         <h2 className="text-h2-sm md:text-h2 text-primary inline-block border-b-2 border-primary pb-1 mb-item-gap">
           Work In Progress
         </h2>
@@ -79,7 +79,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="mt-section mb-section max-w-container mx-auto px-gutter">
+      <section className="mt-section mb-section max-w-container mx-auto px-gutter-sm md:px-gutter">
         <h2 className="text-h2-sm md:text-h2 text-primary inline-block border-b-2 border-primary pb-1 mb-item-gap">
           Case Studies
         </h2>
@@ -91,7 +91,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Wave geo */}
-      <section className="mt-section max-w-container mx-auto px-gutter opacity-40">
+      <section className="mt-section max-w-container mx-auto px-gutter-sm md:px-gutter opacity-40">
         <Image
           src="/images/Geo/wave.png"
           alt=""

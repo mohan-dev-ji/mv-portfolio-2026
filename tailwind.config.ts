@@ -39,8 +39,13 @@ export default {
         container: "1282px",
       },
       spacing: {
-        section:  "64px",
-        "item-gap": "32px",
+        section:      "64px",
+        "item-gap":   "32px",
+        gutter:       "64px",
+        "gutter-sm":  "24px",
+      },
+      dropShadow: {
+        product: "0 8px 24px rgba(0, 0, 0, 0.8)",
       },
       fontSize: {
         // Desktop sizes — use with md: prefix on mobile-first approach

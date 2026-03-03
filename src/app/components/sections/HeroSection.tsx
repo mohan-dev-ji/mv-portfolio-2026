@@ -3,7 +3,7 @@ import ButtonLink from "@/app/components/ui/ButtonLink";
 
 export default function HeroSection() {
   return (
-    <section className="md:min-h-[calc(100vh-3rem)] max-w-container mx-auto px-6 flex flex-col">
+    <section className="md:min-h-[calc(100vh-3rem)] max-w-container mx-auto px-gutter-sm md:px-gutter flex flex-col">
 
       {/* Upper: headline + cube-single */}
       {/* relative outer — headline sets the block height; cube overlays absolute top-right */}

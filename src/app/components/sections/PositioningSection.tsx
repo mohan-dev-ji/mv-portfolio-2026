@@ -3,7 +3,7 @@ import ButtonLink from "@/app/components/ui/ButtonLink";
 
 export default function PositioningSection() {
   return (
-    <section className="mt-section mb-section max-w-container mx-auto px-6">
+    <section className="mt-section mb-section max-w-container mx-auto px-gutter-sm md:px-gutter">
       <div className="flex items-center gap-section">
 
         {/* Image */}

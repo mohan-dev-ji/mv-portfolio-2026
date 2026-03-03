@@ -44,7 +44,7 @@ Every section follows this structure — no exceptions:
 | `gap-section` | 64px | Between columns |
 | `mb-item-gap` / `gap-item-gap` | 32px | Between content items |
 | `max-w-container` | 1282px | Page content width |
-| `px-gutter` | 64px | Horizontal padding on all sections, navbar, footer |
+| `px-gutter-sm md:px-gutter` | 24px → 64px | Horizontal padding on all sections, navbar, footer |
 
 ### Typography (always use responsive pairs)
 | Mobile | Desktop | Use |

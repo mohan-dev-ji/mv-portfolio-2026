@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 bg-zinc-200/80 dark:bg-zinc-900/80 backdrop-blur-md">
 
-      <nav className="max-w-container mx-auto px-6 h-24 flex items-center justify-between">
+      <nav className="max-w-container mx-auto px-gutter-sm md:px-gutter h-24 flex items-center justify-between">
         <Link href="/" className="text-sm text-primary hover:text-secondary transition-colors">
           Mohan Veraitch
         </Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
       {/* Mobile dropdown */}
       {menuOpen && (
         <div className="md:hidden border-t border-border bg-zinc-200/95 dark:bg-zinc-900/95">
-          <div className="max-w-container mx-auto px-6 py-item-gap flex flex-col gap-6">
+          <div className="max-w-container mx-auto px-gutter-sm md:px-gutter py-item-gap flex flex-col gap-6">
             <Link
               href="/projects"
               onClick={() => setMenuOpen(false)}
