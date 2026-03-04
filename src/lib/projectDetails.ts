@@ -25,7 +25,7 @@ export const projectDetails: ProjectDetail[] = [
     breadcrumb: ["Live Product"],
     title: "Mo Speech",
     description:
-      "An AAC symbol exposure app built to help children develop communication skills through consistent symbol interaction.",
+      "An app built to help children develop communication skills through consistent symbol interaction by leveraging the context of everyday situations into learning opportunities.",
     role: "Solo — Concept to Production",
     year: "2026",
     href: "https://mospeech.com",
@@ -43,22 +43,22 @@ export const projectDetails: ProjectDetail[] = [
           {
             title: "Problem",
             paragraphs: [
-              "Children with communication challenges often struggle to develop expressive language. Traditional AAC modelling tools can be complex and hard to use consistently at home.",
-              "Parents and carers need a simple, accessible way to expose children to symbols and reinforce communication throughout the day.",
+              "Children with communication challenges often struggle to develop expressive language. Traditional communication tools can be complex and hard to use through-out everday life.",
+              "Parents and carers need an accessible way to expose children to symbols while not in learning environments.",
             ],
           },
           {
             title: "Built",
             paragraphs: [
-              "Mo Speech is a Progressive Web App built with Next.js and Convex. It presents AAC symbols in a simple, distraction-free interface designed for repeated exposure.",
-              "The app supports multiple categories, dark mode, and was designed with both carers and children in mind.",
+              "Mo Speech is a Web App built with Next.js and Convex. It displays symbols in a full screen, distraction-free interface designed for repeated exposure.",
+              "It's main focus is to quickly access any symbol in the widely used SymbolStix library via user input in the form of voice or text.",
             ],
           },
           {
             title: "What's next",
             paragraphs: [
-              "Expanding the symbol library, adding audio support for each symbol, and building out a dashboard for carers to track engagement over time.",
-              "User testing with families is ongoing to refine the interaction model.",
+              "Phase 1 focused on search. User feedback is now shaping Phase 2 where we will solve the navigation and modelling challenges, which are the major pain points of the AAC (Augmentative and Alternative Communication) comminity.",
+              "Mo Speech is developing into a modern AAC modelling device",
             ],
           },
         ],
@@ -72,9 +72,8 @@ export const projectDetails: ProjectDetail[] = [
         type: "text-image",
         heading: "Main Features",
         paragraphs: [
-          "Symbol grids are organised into categories, making it easy to find and present relevant vocabulary in the moment.",
-          "A clean, high-contrast interface keeps the focus on the symbols — reducing cognitive load for both child and carer.",
-          "Offline-capable as a PWA, so it works reliably without a steady internet connection.",
+          "Search the entire library of over 52,000 symbols by speaking or typing.",
+          "Sequences of symbols can be played full screen to avoid distractions and enhance focus.",
         ],
         image: { src: "/images/Projects/mo-speech/screen-3.png", alt: "Mo Speech symbol grid view" },
       },
@@ -86,13 +85,13 @@ export const projectDetails: ProjectDetail[] = [
         },
         heading: "Categories & Dark Mode",
         paragraphs: [
-          "Symbols are grouped into intuitive categories — food, activities, emotions and more — so carers can navigate quickly during real interactions.",
-          "Dark mode reduces eye strain for evening use and gives the interface a calm, focused feel.",
+          "Symbols are organised into core words and the users history, tracking the last 100 used symbols.",
+          "Dark mode reduces screen glare for users who rely on the app in low-light environments.",
         ],
       },
       {
         type: "stack",
-        items: ["React", "Next.js", "TypeScript", "Cursor", "Claude Code", "Convex"],
+        items: ["React", "Next.js", "TypeScript", "Cursor", "Claude Code", "Convex", "Cloudfare"],
       },
     ],
   },
@@ -103,9 +102,9 @@ export const projectDetails: ProjectDetail[] = [
     title: "The Headlines",
     description: "Creating news articles from RSS feeds, YouTube video and general thoughts.",
     role: "Solo — Concept to Production",
-    year: "2026",
-    href: "https://the-headlines.vercel.app",
-    buttonLabel: "The Headlines",
+    year: "2025",
+    href: "https://theheadlines.io",
+    buttonLabel: "View Live Site",
     relatedSlugs: ["mo-speech", "media-transporter"],
     sections: [
       {
@@ -122,22 +121,23 @@ export const projectDetails: ProjectDetail[] = [
               "Staying updated with the news is difficult in these times of information overload.",
               "Keeping track of topics that happen over time is a challenge this project addresses.",
               "What is the best way to research and write an article?",
+              "How can we validate the truthfullness of the news?",
             ],
           },
           {
             title: "Built",
             paragraphs: [
               "A news aggregation software system that takes sources from RSS feeds, YouTube videos and general comments.",
-              "Sources are fed into Perplexity for fact checking and article composition.",
+              "Sources are fed into Perplexity for fact checking against other similar reports and article composition in a journalistic manner.",
               "Finished articles are user facing while topic selection is controlled on a custom backend interface.",
             ],
           },
           {
             title: "What's next",
             paragraphs: [
-              "This project turned out great for controlling the narrative of articles created.",
-              "This required a lot of manual work.",
-              "The next phase of development is to run a cron job once a day to collect, research and write topics of interest in one API call to Gemini.",
+              "The pipeline proved the concept with real control over well-formed articles but the cost and maintence overheads made it hard to sustain without a monetisation model.",
+              "This project is on hold but Version 2 is in ealry ideation. This will be a consumer app where users specify their topics of interest for which they will receive personalised insights while avoiding the noise of general news.",
+              
             ],
           },
         ],
@@ -149,29 +149,37 @@ export const projectDetails: ProjectDetail[] = [
       },
       {
         type: "text-image",
-        heading: "Backend Interface",
+        heading: "RSS Feeds",
         paragraphs: [
-          "This custom backend interface allows the curator to fully control the RSS feed they want to include.",
-          "Here they can refresh the feed and choose the stories they want to process.",
+          "The custom backend interface allows the curator to add any RSS feed online.",
+          "Here they can refresh the feed, choose the latest stories that interest them for fact-checking and article creation.",
         ],
         image: { src: "/images/Projects/the-headlines/screen-3.jpg", alt: "The Headlines backend interface" },
       },
       {
         type: "image-text",
         image: { src: "/images/Projects/the-headlines/screen-4.jpg", alt: "YouTube video source editor" },
-        heading: "YouTube video to article",
+        heading: "YouTube Video",
         paragraphs: [
-          "YouTube videos with in and out times can be added as sources to be fact checked and written about by Perplexity.",
+          "YouTube videos can be selected as a whole or as a clip with specified in and out times. This pipeline includes video transcription via the Supadata.ai API which is sent to Perplexity for fact checking and article creation in a journalistic manner.",
         ],
       },
       {
         type: "text-image",
-        heading: "Image Generation Pipeline",
+        heading: "Custom Research",
         paragraphs: [
-          "The call to Perplexity also creates 3 image generation prompts based on the context of the articles.",
-          "The curator chooses the most fitting one which is fed into a separate pipeline that calls DALL-E 3 to generate the accompanying image to the written article.",
+          "Provide your own topic with a title, and other optional details to prompt Perplexity to provide detailed feedback or broadly researching an area of interest.",
         ],
         image: { src: "/images/Projects/the-headlines/screen-5.jpg", alt: "Image generation pipeline" },
+      },
+      {
+        type: "image-text",
+        heading: "Image Generation",
+        paragraphs: [
+          "The call to Perplexity also creates 3 image generation prompts based on the context of the articles.",
+          "The curator chooses the most fitting one which is fed into a separate pipeline that calls DALL-E 3 to generate an accompanying image.",
+        ],
+        image: { src: "/images/Projects/the-headlines/screen-6.jpg", alt: "Image generation pipeline" },
       },
       {
         type: "stack",
