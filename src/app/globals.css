@@ -15,7 +15,7 @@
   --color-card:     theme('colors.zinc.100');
   --color-image-bg: theme('colors.zinc.300');
   --color-btn-text: theme('colors.gray.900');
-
+  --color-input-bg: #FBFBFB;
 }
 
 .dark {
@@ -29,6 +29,7 @@
   --color-card:     theme('colors.zinc.800');
   --color-image-bg: theme('colors.zinc.600');
   --color-btn-text: theme('colors.gray.900');
+  --color-input-bg: #FBFBFB;
 }
 
 /* ── Base ────────────────────────────────────────────── */

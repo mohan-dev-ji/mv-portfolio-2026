@@ -34,6 +34,7 @@ export default {
         card:       "var(--color-card)",
         "image-bg": "var(--color-image-bg)",
         "btn-text": "var(--color-btn-text)",
+        "input-bg": "var(--color-input-bg)",
       },
       maxWidth: {
         container: "1282px",
@@ -45,7 +46,7 @@ export default {
         "gutter-sm":  "24px",
       },
       dropShadow: {
-        product: "0 8px 24px rgba(0, 0, 0, 0.8)",
+        product: "0 8px 24px rgba(0, 0, 0, 0.6)",
       },
       fontSize: {
         // Desktop sizes — use with md: prefix on mobile-first approach

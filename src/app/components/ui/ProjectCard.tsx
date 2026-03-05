@@ -18,8 +18,9 @@ export default function ProjectCard({ label, title, description, tags, href, ima
         </div>
       </div>
       <div className="p-6 flex flex-col flex-1">
-        <p className="text-sm text-accent mb-2">
-          <span className="text-accent">#</span> {label}
+        <p className="text-subheading-sm md:text-subheading text-accent mb-4">
+          <span className="text-accent">#</span>
+          <span className="text-primary"> {label}</span> 
         </p>
         <h3 className="text-h2-sm md:text-h2 text-primary border-b-2 border-primary pb-1 mb-4">
           {title}
