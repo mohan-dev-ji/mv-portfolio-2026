@@ -31,7 +31,7 @@ export default function ProjectHeader({
         <span className="text-accent">~/</span> {description}
       </p>
       <p className="text-subheading-sm md:text-subheading text-muted mb-item-gap">
-        Role: {role} // {year}
+        Role: {role}{' // '}{year}
       </p>
       {href && buttonLabel && <ButtonLink href={href} label={buttonLabel} />}
     </div>
