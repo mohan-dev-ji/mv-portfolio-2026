@@ -47,7 +47,7 @@ export const projects: Project[] = [
     label: "Case Study",
     title: "Crypto Collective",
     description:
-      "A collaborative donation platform that enables groups to easily contribute together for charitable causes.",
+      "A collaborative donation platform that brings the crypto community together for charitable causes.",
     tags: [
       "Concept",
       "User Research",
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     label: "Case Study",
     title: "One InBox",
     description:
-      "A multi-channel inbox for communications on Gmail, WhatsApp and Messenger for healthcare reception teams.",
+      "A multi-channel inbox that combines Gmail, WhatsApp and Messenger into one central platform.",
     tags: [
       "User Research",
       "UX/UI Design",

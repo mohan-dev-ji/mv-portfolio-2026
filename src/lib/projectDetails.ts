@@ -25,7 +25,7 @@ export const projectDetails: ProjectDetail[] = [
     breadcrumb: ["Live Product"],
     title: "Mo Speech",
     description:
-      "An app built to help children develop communication skills through consistent symbol interaction by leveraging the context of everyday situations into learning opportunities.",
+      "An app built to help children develop communication skills through consistent symbol interaction by turning everyday situations into learning opportunities.",
     role: "Solo — Concept to Production",
     year: "2026",
     href: "https://mospeech.com",
@@ -43,22 +43,22 @@ export const projectDetails: ProjectDetail[] = [
           {
             title: "Problem",
             paragraphs: [
-              "Children with communication challenges often struggle to develop expressive language. Traditional communication tools can be complex and hard to use through-out everday life.",
-              "Parents and carers need an accessible way to expose children to symbols while not in learning environments.",
+              "Children with communication challenges often struggle to develop expressive language. Traditional communication tools can be complex and hard to use throughout everyday life.",
+              "Parents and carers need an accessible way to expose children to symbols while away from their regular environments.",
             ],
           },
           {
             title: "Built",
             paragraphs: [
               "Mo Speech is a Web App built with Next.js and Convex. It displays symbols in a full screen, distraction-free interface designed for repeated exposure.",
-              "It's main focus is to quickly access any symbol in the widely used SymbolStix library via user input in the form of voice or text.",
+              "Its main focus is to quickly access any symbol in the widely used SymbolStix library via user input in the form of voice or text.",
             ],
           },
           {
             title: "What's next",
             paragraphs: [
-              "Phase 1 focused on search. User feedback is now shaping Phase 2 where we will solve the navigation and modelling challenges, which are the major pain points of the AAC (Augmentative and Alternative Communication) comminity.",
-              "Mo Speech is developing into a modern AAC modelling device",
+              "Phase 1 focused on search. User feedback is now shaping Phase 2 where we will solve the navigation and modelling challenges, which are the major pain points of the AAC (Augmentative and Alternative Communication) community.",
+              "Mo Speech is developing into a modern AAC modelling device.",
             ],
           },
         ],
@@ -85,13 +85,13 @@ export const projectDetails: ProjectDetail[] = [
         },
         heading: "Categories & Dark Mode",
         paragraphs: [
-          "Symbols are organised into core words and the users history, tracking the last 100 used symbols.",
+          "Symbols are organised into core words and the user's history, tracking the last 100 used symbols.",
           "Dark mode reduces screen glare for users who rely on the app in low-light environments.",
         ],
       },
       {
         type: "stack",
-        items: ["React", "Next.js", "TypeScript", "Cursor", "Claude Code", "Convex", "Cloudfare"],
+        items: ["React", "Next.js", "TypeScript", "Cursor", "Claude Code", "Convex", "Cloudflare"],
       },
     ],
   },
@@ -100,7 +100,7 @@ export const projectDetails: ProjectDetail[] = [
     slug: "the-headlines",
     breadcrumb: ["Work In Progress"],
     title: "The Headlines",
-    description: "Creating news articles from RSS feeds, YouTube video and general thoughts.",
+    description: "Creating news articles from RSS feeds, YouTube videos and custom research prompts.",
     role: "Solo — Concept to Production",
     year: "2025",
     href: "https://theheadlines.io",
@@ -119,24 +119,24 @@ export const projectDetails: ProjectDetail[] = [
             title: "Problem",
             paragraphs: [
               "Staying updated with the news is difficult in these times of information overload.",
-              "Keeping track of topics that happen over time is a challenge this project addresses.",
+              "Keeping track of the different news events that happen over time is a challenge this project addresses.",
               "What is the best way to research and write an article?",
-              "How can we validate the truthfullness of the news?",
+              "How can we validate the truthfulness of the news?",
             ],
           },
           {
             title: "Built",
             paragraphs: [
-              "A news aggregation software system that takes sources from RSS feeds, YouTube videos and general comments.",
-              "Sources are fed into Perplexity for fact checking against other similar reports and article composition in a journalistic manner.",
-              "Finished articles are user facing while topic selection is controlled on a custom backend interface.",
+              "A news aggregation software system that takes sources from RSS feeds, YouTube videos and custom research prompts.",
+              "Sources are fed into Perplexity for fact-checking against other similar reports and articles are composed in a journalistic manner.",
+              "Finished articles are user-facing while topic selection is controlled on a custom backend interface.",
             ],
           },
           {
             title: "What's next",
             paragraphs: [
-              "The pipeline proved the concept with real control over well-formed articles but the cost and maintence overheads made it hard to sustain without a monetisation model.",
-              "This project is on hold but Version 2 is in ealry ideation. This will be a consumer app where users specify their topics of interest for which they will receive personalised insights while avoiding the noise of general news.",
+              "The pipeline proved the concept with real control over well-formed articles but the cost and maintenance overheads made it hard to sustain without a monetisation model.",
+              "This project is on hold but Version 2 is in early ideation. This will be a consumer app where users specify their topics of interest for which they will receive personalised insights while avoiding the noise of general news.",
               
             ],
           },
@@ -151,7 +151,7 @@ export const projectDetails: ProjectDetail[] = [
         type: "text-image",
         heading: "RSS Feeds",
         paragraphs: [
-          "The custom backend interface allows the curator to add any RSS feed online.",
+          "The custom backend interface allows the curator to add any free RSS feed online.",
           "Here they can refresh the feed, choose the latest stories that interest them for fact-checking and article creation.",
         ],
         image: { src: "/images/Projects/the-headlines/screen-3.jpg", alt: "The Headlines backend interface" },
@@ -159,16 +159,17 @@ export const projectDetails: ProjectDetail[] = [
       {
         type: "image-text",
         image: { src: "/images/Projects/the-headlines/screen-4.jpg", alt: "YouTube video source editor" },
-        heading: "YouTube Video",
+        heading: "YouTube Videos",
         paragraphs: [
-          "YouTube videos can be selected as a whole or as a clip with specified in and out times. This pipeline includes video transcription via the Supadata.ai API which is sent to Perplexity for fact checking and article creation in a journalistic manner.",
+          "YouTube videos can be selected as a whole or as a clip with specified in and out times. This pipeline includes video transcription via the Supadata.ai API which is sent to Perplexity for fact-checking and article creation in the style of a journalist.",
         ],
       },
       {
         type: "text-image",
         heading: "Custom Research",
         paragraphs: [
-          "Provide your own topic with a title, and other optional details to prompt Perplexity to provide detailed feedback or broadly researching an area of interest.",
+          "Provide your own topic with a title, and other optional details to prompt Perplexity to research your particular area of interest.",
+          "This is extremely useful to verify or falsify whispers you hear on the ether."
         ],
         image: { src: "/images/Projects/the-headlines/screen-5.jpg", alt: "Image generation pipeline" },
       },
@@ -177,7 +178,7 @@ export const projectDetails: ProjectDetail[] = [
         heading: "Image Generation",
         paragraphs: [
           "The call to Perplexity also creates 3 image generation prompts based on the context of the articles.",
-          "The curator chooses the most fitting one which is fed into a separate pipeline that calls DALL-E 3 to generate an accompanying image.",
+          "The curator chooses the most fitting one which, is fed into a separate pipeline that calls DALL-E 3 to generate an accompanying image.",
         ],
         image: { src: "/images/Projects/the-headlines/screen-6.jpg", alt: "Image generation pipeline" },
       },
@@ -193,7 +194,7 @@ export const projectDetails: ProjectDetail[] = [
     breadcrumb: ["Work In Progress"],
     title: "Media Transporter",
     description:
-      "A tool that simplifies file transfers to cross-site facilities into workflows and schedules tasks for operators to work more efficiently.",
+      "A tool that simplifies file transfers, designs workflows and schedules tasks for media operators to work more efficiently.",
     role: "Concept in development",
     year: "2026",
     relatedSlugs: ["crypto-collective", "one-inbox"],
@@ -218,7 +219,7 @@ export const projectDetails: ProjectDetail[] = [
             title: "Design",
             paragraphs: [
               "Media Transporter is programmed to recognise established methods of transferring files so the operator doesn't have to.",
-              "The terminal styled window shows the operator the exact movements and metadata of the file.",
+              "The terminal-styled window shows the operator the exact movements and metadata of the file.",
               "Tasks can be scheduled to operators in order of importance.",
             ],
           },
@@ -258,7 +259,7 @@ export const projectDetails: ProjectDetail[] = [
     breadcrumb: ["Case Study"],
     title: "Crypto Collective",
     description:
-      "Enabling people who are invested in Cryptocurrency to impact the real world in a positive way.",
+      "Enabling people who are invested in cryptocurrency to impact the real world in a positive way.",
     role: "Designer",
     year: "2025",
     relatedSlugs: ["the-headlines", "media-transporter"],
@@ -274,15 +275,15 @@ export const projectDetails: ProjectDetail[] = [
           {
             title: "Problem",
             paragraphs: [
-              "Our user research has consistently shown that lack of transparency is the primary reason people hesitate to donate to charities. Donors want to know exactly how their money is being used and what impact it's making.",
+              "Research has shown that lack of transparency is the primary reason people hesitate to donate to charities. Donors want to know exactly how their money is being used and what impact it's making.",
               "Cryptocurrency investors are building up large amounts of wealth in digital assets. They are not so quick to cash out into FIAT currency due to tighter tax laws being implemented.",
             ],
           },
           {
             title: "Design",
             paragraphs: [
-              "Crypto Collective is a digital donation platform. The platform leverages blockchain technology to create a transparent, efficient, and engaging donation experience.",
-              "Users browse Appeals, choose how much they want to donate and in which cryptocurrency. The transaction is then instantly verified on the blockchain, ensuring transparency from the moment the donation is made.",
+              "Crypto Collective is a digital donation platform. The platform leverages blockchain technology to create a transparent donation experience.",
+              "Users browse appeals, decide how much they want to donate and in which cryptocurrency. The transaction is then instantly verified on the blockchain, ensuring transparency from the moment the donation is made.",
             ],
           },
         ],
@@ -296,7 +297,7 @@ export const projectDetails: ProjectDetail[] = [
         type: "text-image",
         heading: "Customisation",
         paragraphs: [
-          "Users can create a profile and follow their favourite Cryptocurrency.",
+          "Users can create a profile and follow their favourite cryptocurrency.",
           "They can join groups and follow communities to support appeals that are close to their heart.",
         ],
         image: { src: "/images/Projects/crypto-collective/screen-3.jpg", alt: "Crypto Collective profile customisation" },
@@ -321,7 +322,7 @@ export const projectDetails: ProjectDetail[] = [
     breadcrumb: ["Case Study"],
     title: "One InBox",
     description:
-      "An all in application for independent medical practices. Easy tracking of all communications, appointments and payments.",
+      "An all-in-one application for independent medical practices to easily track all communications, appointments, supply levels and payments.",
     role: "Designer",
     year: "2024",
     relatedSlugs: ["mo-speech", "crypto-collective"],
@@ -337,8 +338,8 @@ export const projectDetails: ProjectDetail[] = [
           {
             title: "Problem",
             paragraphs: [
-              "Medical Receptionists struggle to maintain communications over several different platforms while booking appointments and billing have to be manually maintained.",
-              "Owners need informative insights into billings and payments to make informed business decisions.",
+              "Medical receptionists struggle to maintain communications over several different platforms while manually maintaining bookings and invoicing patients.",
+              "Owners need informative insights into their finances to make informed business decisions.",
             ],
           },
           {
@@ -357,11 +358,19 @@ export const projectDetails: ProjectDetail[] = [
       },
       {
         type: "text-image",
-        heading: "Supply & Demand",
+        heading: "Multi-Channel Inbox",
         paragraphs: [
-          "Supplies are tracked and Suppliers are logged to ensure stock never runs out and proprietors always pay the best price.",
+          "Appointments, correspondence and payments can now flow into one main system regardless of the platform the patient uses.",
         ],
         image: { src: "/images/Projects/one-inbox/screen-3.jpg", alt: "One InBox supply management" },
+      },
+      {
+        type: "image-text",
+        heading: "Supply & Demand",
+        paragraphs: [
+          "Supplies are tracked and suppliers are logged to ensure stock never runs out and proprietors always pay the best price for their stock.",
+        ],
+        image: { src: "/images/Projects/one-inbox/screen-4.jpg", alt: "One InBox supply management" },
       },
       {
         type: "stack",
