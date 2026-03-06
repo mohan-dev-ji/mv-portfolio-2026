@@ -50,9 +50,9 @@ export default {
       },
       fontSize: {
         // Desktop sizes — use with md: prefix on mobile-first approach
-        display:        ["6rem",      { lineHeight: "1.2", fontWeight: "600" }],
-        h2:             ["2rem",      { lineHeight: "1.2", fontWeight: "500" }],
-        subheading:     ["1.5rem",    { lineHeight: "1.3", fontWeight: "400" }],
+        display:        ["6rem",      { lineHeight: "1.2", fontWeight: "700" }],
+        h2:             ["2rem",      { lineHeight: "1.2", fontWeight: "600" }],
+        subheading:     ["1.5rem",    { lineHeight: "1.3", fontWeight: "500" }],
         body:           ["1rem",      { lineHeight: "1.6", fontWeight: "400" }],
         // Mobile sizes
         "display-sm":   ["3rem",      { lineHeight: "1.0", fontWeight: "600" }],

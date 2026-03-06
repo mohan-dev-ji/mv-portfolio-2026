@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@marsidev/react-turnstile": "^1.4.2",
     "@radix-ui/react-slot": "^1.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "class-variance-authority": "^0.7.0",
@@ -22,6 +23,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.0",
+    "resend": "^6.9.3",
     "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {

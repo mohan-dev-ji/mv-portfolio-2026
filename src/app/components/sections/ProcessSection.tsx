@@ -4,17 +4,17 @@ const processItems = [
   {
     title: "Research",
     subtitle: "Primary &\nSecondary",
-    items: ["User Flows", "Competitor Analysis", "Journey Maps"],
+    items: ["User Interviews", "Journey Maps", "Competitor Analysis"],
   },
   {
     title: "Design",
     subtitle: "Mock-up &\nIterate",
-    items: ["Design Tokens", "Wireframes", "High-fidelity"],
+    items: ["Wireframes", "High-fidelity", "Design Tokens"],
   },
   {
     title: "Build",
     subtitle: "Prototype &\nDevelop",
-    items: ["React", "Convex", "Cloudfare"],
+    items: ["React", "Convex", "Cloudflare"],
   },
   {
     title: "Deploy",
