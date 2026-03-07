@@ -25,13 +25,16 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Bot verification failed" }, { status: 400 });
   }
 
-  await resend.emails.send({
+  const { data, error } = await resend.emails.send({
     from: "info@mohanveraitch.com",
     to: "info@mohanveraitch.com",
-    replyTo: email,
+    replyTo: [email],
     subject: `Portfolio enquiry from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   });
 
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
   return NextResponse.json({ success: true });
 }
