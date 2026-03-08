@@ -35,7 +35,7 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="max-w-container mx-auto px-gutter-sm md:px-gutter">
-        <div className="relative mt-section mb-section min-h-[280px]">
+        <div className="relative mt-section mb-section min-h-[280px] flex flex-col justify-center">
           <h1 className="text-display-sm md:text-display font-semibold leading-none text-primary">
             Contact
           </h1>
@@ -46,11 +46,11 @@ export default function ContactPage() {
           <div className="hidden md:block absolute inset-y-0 right-0 w-[100%]">
             <div className="relative w-full h-full">
               <Image
-                src="/images/Geo/sphere.png"
+                src="/images/Geo/sphere-headon.png"
                 alt=""
                 fill
-                sizes="50vw"
-                className="object-contain object-right"
+                sizes="60vw"
+                className="object-contain object-right scale-[1.2] origin-right"
               />
             </div>
           </div>
@@ -91,13 +91,15 @@ export default function ContactPage() {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 className="w-full border border-border bg-input-bg px-3 py-2 text-body text-primary placeholder:text-muted focus:outline-none focus:border-accent resize-y"
               />
-              <Turnstile
-                ref={turnstileRef}
-                siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-                onSuccess={setToken}
-                onError={() => setToken(null)}
-                onExpire={() => setToken(null)}
-              />
+              <div className="flex justify-center">
+                <Turnstile
+                  ref={turnstileRef}
+                  siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                  onSuccess={setToken}
+                  onError={() => setToken(null)}
+                  onExpire={() => setToken(null)}
+                />
+              </div>
               {status === "error" && (
                 <p className="text-sm text-accent">Something went wrong. Please try again.</p>
               )}

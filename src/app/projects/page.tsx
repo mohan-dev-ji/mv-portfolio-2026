@@ -12,7 +12,7 @@ export default function ProjectsPage() {
     <>
       {/* Hero */}
       <section className="max-w-container mx-auto px-gutter-sm md:px-gutter">
-        <div className="relative mt-section mb-section min-h-[280px]">
+        <div className="relative mt-section mb-section min-h-[280px] flex flex-col justify-center">
           <h1 className="text-display-sm md:text-display font-semibold leading-none text-primary">
             Projects
           </h1>
@@ -20,14 +20,14 @@ export default function ProjectsPage() {
             <span className="text-accent">&gt;</span>
             <span className="text-secondary"> Selected work</span>
           </p>
-          <div className="hidden md:block absolute inset-y-0 right-0 w-[100%]">
+          <div className="hidden md:block absolute inset-y-0 right-0 w-[100%] opacity-30">
             <div className="relative w-full h-full">
               <Image
-                src="/images/Geo/sphere.png"
+                src="/images/Geo/cube-cage.png"
                 alt=""
                 fill
                 sizes="50vw"
-                className="object-contain object-right"
+                className="object-contain object-right scale-[1.2] origin-right"
               />
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function ProjectsPage() {
       {/* Wave geo */}
       <section className="mt-section max-w-container mx-auto px-gutter-sm md:px-gutter opacity-40">
         <Image
-          src="/images/Geo/wave.png"
+          src="/images/Geo/wave-atoms.png"
           alt=""
           width={1282}
           height={540}

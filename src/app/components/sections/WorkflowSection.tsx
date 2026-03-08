@@ -2,7 +2,9 @@ import Image from "next/image";
 
 export default function WorkflowSection() {
   return (
-    <section className="max-w-container mx-auto px-gutter-sm md:px-gutter">
+    <section className="relative max-w-container mx-auto px-gutter-sm md:px-gutter">
+      {/* Horizontal beam behind wave */}
+      <div className="absolute top-[30%] left-0 w-full h-[6px] bg-primary blur-[80px] opacity-10 dark:opacity-20 pointer-events-none" aria-hidden />
       {/* Wave geo divider — full bleed */}
       <div className="w-full opacity-40">
         <Image
