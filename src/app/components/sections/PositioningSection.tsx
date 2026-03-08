@@ -24,9 +24,10 @@ export default function PositioningSection() {
             <span className="text-h2 font-semibold text-primary">_</span>
           </div>
           <p className="text-body text-secondary max-w-md mb-item-gap">
-            I work across the full product cycle, from user research and Figma to shipped React
-            applications. I built Mo Speech from concept to live product. I&apos;m looking to bring
-            that same end-to-end ownership to a team that moves fast and cares about craft.
+            I work across the whole product lifecycle, from user research, designing and prototyping to shipping full-stack React applications.  I built Mo Speech from concept to live product. The user feedback is now helping me develop this into a real contender in the Augmentative and Alternative Communication market. 
+          </p>
+          <p className="text-body text-secondary max-w-md mb-item-gap">
+            I&apos;m looking to bring my knowledge and attitude of ownership to teams that want to build fast while placing a high level of importance on the craft.
           </p>
           <ButtonLink href="/contact" label="Get in touch" />
         </div>

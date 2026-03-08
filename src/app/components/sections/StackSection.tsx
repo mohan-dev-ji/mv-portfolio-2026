@@ -4,10 +4,10 @@ import { ArrowRight } from "lucide-react";
 const stackItems = [
   "React",          "Figma",          "Tailwind CSS",
   "Next.js",        "After Effects",  "Shad CN",
-  "Typescript",     "Blender",        "Python",
+  "TypeScript",     "Blender",        "Python",
   "Cursor",         "Photoshop",      "Bash",
   "Claude Code",    "Premiere",       "HTML",
-  "Convex",         "Da Vinci",       "CSS",
+  "Convex",         "DaVinci",       "CSS",
 ];
 
 export default function StackSection() {

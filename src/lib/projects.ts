@@ -25,7 +25,7 @@ export const projects: Project[] = [
     label: "Work in progress",
     title: "The Headlines",
     description:
-      "A website that uses RSS feed to find news-worthy articles and researches their validity.",
+      "A website that uses RSS feeds to find newsworthy articles and researches their validity.",
     tags: ["Concept", "Deployment", "UX/UI Design", "Design System", "Build"],
     href: "/projects/the-headlines",
     image: "/images/Projects/the-headlines/hero.jpg",

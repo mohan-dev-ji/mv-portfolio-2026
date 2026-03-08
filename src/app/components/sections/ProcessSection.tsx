@@ -9,17 +9,17 @@ const processItems = [
   {
     title: "Design",
     subtitle: "Mock-up &\nIterate",
-    items: ["Wireframes", "High-fidelity", "Design Tokens"],
+    items: ["Wireframes", "High-fidelity", "Design System"],
   },
   {
     title: "Build",
     subtitle: "Prototype &\nDevelop",
-    items: ["React", "Convex", "Cloudflare"],
+    items: ["Coding", "Databases", "CDNs"],
   },
   {
     title: "Deploy",
     subtitle: "Push &\nAnalyse",
-    items: ["Vercel", "Git", "SEO"],
+    items: ["Hosting", "Version Control", "SEO"],
   },
 ];
 
