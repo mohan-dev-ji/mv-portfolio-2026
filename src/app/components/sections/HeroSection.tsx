@@ -10,12 +10,12 @@ export default function HeroSection() {
       <div className="relative mt-section mb-4">
         <div>
           <h1 className="text-display-sm md:text-display font-semibold leading-none text-primary">
-            Design, Build<br />&amp; Deploy
+            Product Design
           </h1>
           <div className="mt-6 space-y-1">
             <p className="text-body">
               <span className="text-accent">&gt;</span>
-              <span className="text-secondary"> Design Engineer</span>
+              <span className="text-secondary"> UX/UI Designer, Design Engineer, Product Developer</span>
             </p>
             <p className="text-body-sm md:text-body">
               <span className="text-accent">~/</span>
@@ -26,7 +26,8 @@ export default function HeroSection() {
 
         {/* inset-y-0 right-0 = spans full headline height, right edge = container right = navbar toggle */}
         {/* increase w-[38%] to make cube bigger */}
-        <div className="hidden md:block absolute inset-y-0 right-0 w-[25%]">
+        {/* xl only — one-line headline collides with the cube below ~1180px */}
+        <div className="hidden xl:block absolute inset-y-0 right-0 w-[25%]">
           <div className="relative w-full h-full">
             <Image
               src="/images/Geo/cube-single.png"
