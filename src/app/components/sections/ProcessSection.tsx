@@ -9,24 +9,19 @@ const processItems = [
   {
     title: "Design",
     subtitle: "Mock-up &\nIterate",
-    items: ["Wireframes", "High-fidelity", "Design System"],
+    items: ["Wireframes", "Shaders", "Design System"],
   },
   {
     title: "Build",
     subtitle: "Prototype &\nDevelop",
-    items: ["Coding", "Databases", "CDNs"],
-  },
-  {
-    title: "Deploy",
-    subtitle: "Push &\nAnalyse",
-    items: ["Hosting", "Version Control", "SEO"],
+    items: ["Claude Code", "Skills", "MCP"],
   },
 ];
 
 export default function ProcessSection() {
   return (
     <section className="mt-item-gap md:mt-section max-w-container mx-auto px-gutter-sm md:px-gutter">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-item-gap">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-item-gap">
         {processItems.map((item) => (
           <div key={item.title} className="border border-border p-6">
             <div className="border-b-2 border-primary pb-1 mb-4">

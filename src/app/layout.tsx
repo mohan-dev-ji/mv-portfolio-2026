@@ -13,8 +13,8 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Mohan Veraitch | Design Engineer",
-  description: "Design Engineer based in London. Design, Build & Deploy.",
+  title: "Mohan Veraitch | Product Design",
+  description: "Product designer based in London. UX/UI Designer, Design Engineer, Product Developer.",
 };
 
 export default function RootLayout({
