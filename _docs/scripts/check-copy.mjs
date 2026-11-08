@@ -67,7 +67,7 @@ lines.forEach((raw, i) => {
     if (!NOTE_RE.test((lines[i + 2] || "").trim())) report(Math.min(i + 2, lastLine), "media", "Caption: not followed by a valid Note:");
     return;
   }
-  if (/^(Caption|Note|One-liner|Headline):/.test(line) || line.startsWith("-") || line.startsWith(">")) { flushPara(); return; }
+  if (/^(Caption|Note|One-liner|Headline|Group):/.test(line) || line.startsWith("-") || line.startsWith(">")) { flushPara(); return; }
   if (!para) para = { line: i, words: 0 };
   para.words += line.split(/\s+/).length;
 });
