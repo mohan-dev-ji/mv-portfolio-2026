@@ -18,13 +18,14 @@
 - Every `use_figma` call loads the `figma:figma-use` skill first. Calls that change visible design also load `figma:figma-generate-design`. Motion work also loads `figma:figma-use-motion`.
 - Fonts: titles are **DM Serif Display** (Regular only). Everything else is **DM Sans** (Regular 400, Medium 500). Light only.
 - Colours: page `#FAFAF7`, ink `#18181B`, grey `#71717A`, hairline `#E4E4E7`, production note `#EA580C`.
-- Voice: first person, plain words, real numbers, Mo's son as the reason, British spelling. Grammar fixed, explanations sharpened, never polished to perfection.
+- Voice: first person, plain words, real numbers, Mo's son as the origin (in the overview, never the headline: Mo leads as founder, designer and engineer), British spelling. Grammar fixed, explanations sharpened, never polished to perfection.
 - No em dashes (—) or en dashes (–) anywhere in the copy.
 - Body paragraphs: 55 words at most. Aim for 25 to 50.
 - Every section: stage label, statement headline, at most two body paragraphs, then media with a caption and a production note.
 - Production note formats, exactly: `VIDEO · <length> · <device> screen recording: …`, `GALLERY · <n> images, click through: …`, `STILL · …`, `DIAGRAM · …`.
 - Product facts come from `~/Projects/mo-speech-home/docs/4-builds/features/`. Tones are angry, neutral and excited (Max). Modelling dims the page, lights the next tap and shows a pointer, and syncs live across every device on the profile. Languages are English, Spanish and Hindi (preview). Animated themes: two on Pro, all four on Max.
-- Unconfirmed facts are marked `[CHECK: …]` in the copy and not stated as true: the 58,000 symbol count, and the MVP dates.
+- Unconfirmed facts are marked `[CHECK: …]` in the copy and not stated as true. After checkpoint A only the MVP dates remain. `[CHECK:]` text never goes into Figma.
+- **Tokens everywhere (Mo, checkpoint A).** In every v2 frame and component, every colour, gap, padding and corner radius is bound to a `Portfolio v2` variable, and every text node uses a `v2/` text style whose font family, size and line height are themselves bound to variables. No raw values. Only top-level frame positions and fixed media sizes may be raw. Make a component whenever a pattern repeats twice or more.
 
 ## File structure
 
@@ -289,29 +290,38 @@ Stop. Send Mo the case study and storyboard files. He reads them, edits anything
 
 ### Owner checkpoint B: voice test
 
-Mo reads `mo-voice-tests.md` and marks each output "sounds like me" or not. For each miss, add a rule or pair to the skill and re-run that test.
+Mo reads `mo-voice-tests.md` and marks each output "sounds like me" or not. For each miss, add a rule or pair to the skill and re-run that test. **This does not block the Figma tasks** (only Task 11 Step 2 uses the skill): send the tests with the final report.
 
-### Task 6: Figma foundations
+### Task 6: Figma foundations: tokens, text styles and components
 
 **Files:** Figma only, on page 159:4267.
 
 **Interfaces:**
 - Produces:
-  - Variable collection `Portfolio v2`, colour variables `bg`, `ink`, `grey`, `hairline`, `note`, each scoped explicitly (`FRAME_FILL`/`SHAPE_FILL` for bg and hairline; `TEXT_FILL` for ink, grey and note; plus `STROKE_COLOR` for hairline and ink).
-  - Text styles `v2/Display` (DM Serif Display 64/105%), `v2/Headline` (DM Serif Display 40/115%), `v2/Subhead` (DM Serif Display 28/120%), `v2/Label` (DM Sans Medium 13, caps, letter spacing 8%), `v2/Body` (DM Sans Regular 19/160%), `v2/Body small` (DM Sans Regular 16/155%), `v2/Caption` (DM Sans Regular 14/140%, grey), `v2/Note` (DM Sans Medium 13/140%, note colour), `v2/Nav` (DM Sans Regular 16).
-  - A frame `v2 / Components` holding these components:
+  - Variable collection **`Portfolio v2`**, one mode (`Light`). Set `scopes` on every variable explicitly. Names and values:
+    - **Colour** (`COLOR`): `colour/bg` #FAFAF7, `colour/surface` #FFFFFF, `colour/ink` #18181B, `colour/grey` #71717A, `colour/hairline` #E4E4E7, `colour/note` #EA580C. Scopes: bg and surface `FRAME_FILL`, `SHAPE_FILL`; ink, grey and note `TEXT_FILL`, `SHAPE_FILL`, `STROKE_COLOR`; hairline `SHAPE_FILL`, `STROKE_COLOR`.
+    - **Spacing** (`FLOAT`, scope `GAP`): `space/4`, `space/8`, `space/12`, `space/16`, `space/24`, `space/32`, `space/48`, `space/64`, `space/96`, `space/160`, each equal to its number. Padding uses the same variables (also scope them for padding: in the Plugin API the `GAP` scope covers gap and padding).
+    - **Radius** (`FLOAT`, scope `CORNER_RADIUS`): `radius/sm` 8, `radius/md` 12, `radius/lg` 20, `radius/full` 999.
+    - **Stroke** (`FLOAT`, scope `STROKE_FLOAT`): `stroke/hairline` 1, `stroke/drawing` 1.5.
+    - **Layout** (`FLOAT`, scope `WIDTH_HEIGHT`): `layout/page` 1728, `layout/column` 1088, `layout/sidenav` 220, `layout/content` 760.
+    - **Typography:** `font/serif` (`STRING`, scope `FONT_FAMILY`) "DM Serif Display"; `font/sans` (`STRING`, `FONT_FAMILY`) "DM Sans"; sizes (`FLOAT`, `FONT_SIZE`) `size/display` 64, `size/headline` 40, `size/subhead` 28, `size/body` 19, `size/body-small` 16, `size/nav` 16, `size/caption` 14, `size/label` 13, `size/note` 13; line heights in px (`FLOAT`, `LINE_HEIGHT`) `leading/display` 68, `leading/headline` 46, `leading/subhead` 34, `leading/body` 30, `leading/body-small` 25, `leading/nav` 24, `leading/caption` 20, `leading/label` 18, `leading/note` 18.
+  - Text styles, each with `fontFamily`, `fontSize` and `lineHeight` bound to the variables above: `v2/Display` (serif Regular), `v2/Headline` (serif Regular), `v2/Subhead` (serif Regular), `v2/Label` (sans Medium, caps, letter spacing 8%), `v2/Body` (sans Regular), `v2/Body small` (sans Regular), `v2/Caption` (sans Regular), `v2/Note` (sans Medium), `v2/Nav` (sans Regular). Colour is applied on the node (grey for Caption, note colour for Note), bound to the colour variables.
+  - A frame `v2 / Components` holding these components, all auto-layout and fully bound:
     - `Nav item` (variants `State=Default|Active|Group`);
-    - `Media block` (an image or video area with fill-width placeholder, a `Caption` text, and a `Production note` text layer);
-    - `Gallery` (a media area, previous and next arrows, dots, a caption and a production note);
-    - `Stat`;
+    - `Section header` (label, headline, optional one-liner via a boolean property);
+    - `Media block` (variants `Kind=Still|Video|Diagram`; a fill-width media area, a play glyph on Video, then `Caption` and a `Production note` text layer);
+    - `Gallery`: **a click-through carousel**. Variant properties `Count=3|4|6` and `Slide=1…Count` (13 variants). Each variant has a clipped viewport holding a horizontal strip of `Slide 1…Count` frames (same names in every variant, so image overrides survive a variant change); the strip's x shifts per `Slide`. Previous and next arrow buttons and a dot row (active dot ink, others hairline). Prototype reactions on the arrows: `On click → Change to` the next or previous `Slide` of the same `Count`, wrapping at both ends, with Smart animate, ease out, 300ms. Then a `Caption` and a `Production note`;
+    - `Stat` (number and label);
     - `Problem card`;
-    - `Storyboard panel` (a 340×255 frame with a 1.5px ink stroke and radius 12, plus a caption).
+    - `Insight` (number label and headline);
+    - `Storyboard panel` (a 340×255 frame with a `stroke/drawing` ink stroke and `radius/md`, plus a caption).
+    Add any other component the pages need when a pattern repeats twice or more, and list it in the report.
   - Return all IDs. Later tasks pass them as string literals.
 
 - [ ] **Step 1: Read the page.** Run a read-only `use_figma`. Run `listAvailableFontsAsync` filtered to `DM Serif Display` and `DM Sans`, and confirm the style names (for example `Medium`). Find the bottom edge of the lowest top-level node on the page. Every v2 frame goes in a row starting 2000px below that edge, at x 0.
 - [ ] **Step 2: Create the variables and text styles.** Return their IDs.
-- [ ] **Step 3: Build the components.** Use auto-layout throughout. Bind every colour to the `Portfolio v2` variables and every text node to a `v2/` style. Return their IDs.
-- [ ] **Step 4: Verify.** Run a read-only query that returns every TEXT node inside `v2 / Components` whose `textStyleId` is empty. Expected: `[]`. Then take one screenshot of `v2 / Components`. Check that no text is clipped and no node overlaps another.
+- [ ] **Step 3: Build the components.** Bind every fill, stroke, stroke weight, gap, padding and radius to a variable, and every text node to a `v2/` style. Return their IDs.
+- [ ] **Step 4: Verify.** Run a read-only query over `v2 / Components` that returns: TEXT nodes with an empty `textStyleId`; SOLID fills or strokes without a bound colour variable; auto-layout frames whose `itemSpacing` or padding is non-zero and unbound; nodes with a non-zero radius that is unbound. Expected: all four lists empty. List the `Gallery` reactions per variant and confirm each arrow points at the right neighbour. Then take one screenshot of `v2 / Components`. Check that no text is clipped and no node overlaps another.
 
 ### Task 7: Home v2 with the typing loop
 
@@ -352,11 +362,11 @@ Mo reads `mo-voice-tests.md` and marks each output "sounds like me" or not. For 
   - A content column 760 wide at x 648.
 - [ ] **Step 2: Build the Hero, Overview and Act 1 sections.**
   - Copy the text verbatim from the markdown: label → `v2/Label`, headline → `v2/Headline`, `####` → `v2/Subhead`, one-liner → `v2/Subhead`, body → `v2/Body`.
-  - Each `Media:` block becomes a `Media block` or `Gallery` instance. Where the markdown names an existing layer, clone that image fill from frame 169:4. Otherwise leave the placeholder.
+  - Each `Media:` block becomes a `Media block` (Kind from the note: VIDEO, STILL or DIAGRAM) or a `Gallery` instance with the matching `Count`, one image per slide. Where the markdown names an existing layer, clone that image fill from frame 169:4. Otherwise leave the placeholder.
   - Captions and notes go in exactly as written.
   - The three problems are `Problem card` instances. The launch numbers are `Stat` instances.
-  - Leave 160px between sections.
-- [ ] **Step 3: Verify.** Run a read-only query to confirm every `Production note` layer's text starts with `VIDEO ·`, `GALLERY ·`, `STILL ·` or `DIAGRAM ·`, and that no TEXT lacks a `v2/` style. Then screenshot the top 3000px.
+  - Leave `space/160` between sections.
+- [ ] **Step 3: Verify.** Run the Task 6 Step 4 token query over the frame (expected: all lists empty). Run a read-only query to confirm every `Production note` layer's text starts with `VIDEO ·`, `GALLERY ·`, `STILL ·` or `DIAGRAM ·`, and that no TEXT lacks a `v2/` style. Then screenshot the top 3000px.
 
 ### Task 9: Case study v2, Act 2 and closing
 
@@ -366,7 +376,7 @@ Mo reads `mo-voice-tests.md` and marks each output "sounds like me" or not. For 
 - Consumes: the Task 8 frame. Append to its content column.
 
 - [ ] **Step 1: Build the Act 2 sections and What's next.** Follow the same rules as Task 8 Step 2. Give each feature group a `v2/Subhead` heading, with its features beneath at 96px spacing. Leave the storyboard sections (Act 1 Ideate, Act 2 Ideate) as six empty `Storyboard panel` instances for Task 10.
-- [ ] **Step 2: Verify.** Run the same query as Task 8 Step 3 over the whole frame. Then screenshot Act 2 in two halves. Check for clipped text and overlaps.
+- [ ] **Step 2: Verify.** Run the same queries as Task 8 Step 3 over the whole frame. Then screenshot Act 2 in two halves. Check for clipped text and overlaps.
 
 ### Task 10: Draw the storyboards
 
