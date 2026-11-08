@@ -198,7 +198,7 @@ Headline: There's no central place for navigation, and the folders live among th
 
 #### Insight 3
 
-Headline: Current AAC users seem to be wizards on YouTube, which uses standard dashboard navigation.
+Headline: Current AAC users seem to be wizards on YouTube, so they already find their way around its standard dashboard navigation.
 
 Media: image 3, image 4, image 6
 Caption: TD Snap, Awaaz and Proloquo2Go
@@ -282,11 +282,11 @@ I designed them with Figma shaders, then converted them to WebGL2. I made a skil
 
 Media: new
 Caption: Water, on Pro
-Note: VIDEO · 10s · tablet screen recording: Home on Water, no taps, calm water ripples and bobs behind the frosted-glass cards. Water 1 is the still fallback.
+Note: VIDEO · 10s · tablet screen recording: Home on Water, no taps, calm water ripples and bobs behind the frosted-glass cards. Water 1 is the still fallback. Record on a local or dev build, because only Space is published so far.
 
 Media: new
 Caption: Clouds, on Pro
-Note: VIDEO · 10s · tablet screen recording: Home on Clouds, no taps, soft clouds drift slowly and sunbeams break through the gaps.
+Note: VIDEO · 10s · tablet screen recording: Home on Clouds, no taps, soft clouds drift slowly and sunbeams break through the gaps. Record on a local or dev build, because only Space is published so far.
 
 Media: new
 Caption: Space, on Max
@@ -294,7 +294,7 @@ Note: VIDEO · 10s · tablet screen recording: Home on Space, no taps, stars str
 
 Media: new
 Caption: Electric Midnight, on Max
-Note: VIDEO · 10s · tablet screen recording: Home on Electric Midnight, no taps, storm clouds drift across a midnight sky while green lightning races from edge to edge.
+Note: VIDEO · 10s · tablet screen recording: Home on Electric Midnight, no taps, storm clouds drift across a midnight sky while green lightning races from edge to edge. Record on a local or dev build, because only Space is published so far.
 
 ## Features
 
@@ -314,7 +314,7 @@ You can tap symbols or phrases into the talker, then delete and reorder them to 
 
 Media: new
 Caption: Building a sentence in the talker
-Note: VIDEO · 10s · tablet screen recording: talker on in a category, tap three symbols into the talker, drag one to a new place, remove one, tap Play, and each block lights up as it speaks. Screenshot 2026-11-08 at 12.09.36 1 is the still fallback.
+Note: VIDEO · 20s · tablet screen recording: talker on in a category, tap three symbols into the talker, drag one to a new place, remove one, tap Play, and each block lights up as it speaks. Screenshot 2026-11-08 at 12.09.36 1 is the still fallback.
 
 #### The talker dropdown
 
@@ -326,7 +326,7 @@ With core words and phrases attached to the talker, a student can finish a whole
 
 Media: new
 Caption: Core words and phrases, from any category
-Note: VIDEO · 10s · tablet screen recording: talker on in Food, open the dropdown, tap "I want" on the Phrases tab, close it, tap "biscuit" on the board, open Core words and tap "please". Screenshot 2026-11-06 at 11.12.47 1 and Screenshot 2026-11-06 at 11.13.20 1 are the still fallbacks.
+Note: VIDEO · 15s · tablet screen recording: talker on in Food, open the dropdown, tap "I want" on the Phrases tab, close it, tap "biscuit" on the board, open Core words and tap "please". Screenshot 2026-11-06 at 11.12.47 1 and Screenshot 2026-11-06 at 11.13.20 1 are the still fallbacks.
 
 #### Sentences
 
@@ -338,7 +338,7 @@ A block sentence is saved from the talker, and plays block by block, with short 
 
 Media: new
 Caption: Making a fluent sentence
-Note: VIDEO · 10s · tablet screen recording: in Sentences, tap Create sentence, type "I want to go outside", Auto-match finds the symbols, save it, then tap it and it plays full screen as one sentence. Screenshot 2026-11-07 at 14.47.12 1 is the still fallback.
+Note: VIDEO · 30s · tablet screen recording: in Sentences, tap Create sentence, type "I want to go outside", Auto-match finds the symbols, save it, then tap it and it plays full screen as one sentence. Screenshot 2026-11-07 at 14.47.12 1 is the still fallback.
 
 #### Tone
 
@@ -350,7 +350,7 @@ Tap a face and the whole sentence plays again in that tone. Tones also let a blo
 
 Media: new
 Caption: Playing a sentence with the excited tone
-Note: VIDEO · 10s · tablet screen recording: play a saved block sentence, it lights up block by block, then tap the excited face and it plays again as one excited sentence. Screenshot 2026-11-07 at 21.18.53 1 is the still fallback.
+Note: VIDEO · 20s · tablet screen recording: play a saved block sentence, it lights up block by block, then tap the excited face and it plays again as one excited sentence. Screenshot 2026-11-07 at 21.18.53 1 is the still fallback.
 
 Group: Teaching
 
@@ -364,7 +364,7 @@ One Mo Speech account serves two very different people: the adult who sets thing
 
 Media: new
 Caption: Switching to a student's view
-Note: VIDEO · 10s · tablet screen recording: in the instructor view, open the view switcher and pick a student, and the theme, language and sidebar change to theirs, with fewer pages. Screenshot 2026-11-08 at 01.45.10 1 is the still fallback.
+Note: VIDEO · 15s · tablet screen recording: in the instructor view, open the view switcher and pick a student, and the theme, language and sidebar change to theirs, with fewer pages. Screenshot 2026-11-08 at 01.45.10 1 is the still fallback.
 
 #### Modelling mode
 
@@ -376,7 +376,7 @@ The instructor taps Model in a category and picks a word. Every device on the st
 
 Media: new
 Caption: A modelling session on the student's tablet
-Note: VIDEO · 10s · tablet screen recording: the tablet goes to Home and dims, Categories lights up with a pointer, tap it, the Food tile lights up, tap it, "snack" lights up, tap it and it speaks. Screenshot 2026-11-08 at 02.06.54 1 is the still fallback.
+Note: VIDEO · 20s · tablet screen recording: the tablet goes to Home and dims, Categories lights up with a pointer, tap it, the Food tile lights up, tap it, "snack" lights up, tap it and it speaks. Screenshot 2026-11-08 at 02.06.54 1 is the still fallback.
 
 #### Connected words
 
@@ -388,7 +388,7 @@ The Mo Speech admin adds connected words by hand, based on feedback from onboard
 
 Media: new
 Caption: Holding "go" for its connected words
-Note: VIDEO · 10s · tablet screen recording: open Core words in the talker dropdown, press and hold "go", a ring of glow builds, the card opens with "went" and "gone", tap "went" and it speaks and joins the talker. Screenshot 2026-11-08 at 02.14.41 1 is the still fallback.
+Note: VIDEO · 15s · tablet screen recording: open Core words in the talker dropdown, press and hold "go", a ring of glow builds, the card opens with "went" and "gone", tap "went" and it speaks and joins the talker. Screenshot 2026-11-08 at 02.14.41 1 is the still fallback.
 
 Group: Making it yours
 
@@ -402,7 +402,7 @@ You can pick a symbol from the SymbolStix library, upload your own picture, or s
 
 Media: new
 Caption: Making a symbol with AI Generate
-Note: VIDEO · 10s · tablet screen recording: open the symbol editor, go to AI Generate, type "red kite", choose Storybook, tap Generate, the picture lands in My Images, tap Add to symbol, then Save. Screenshot 2026-11-08 at 01.55.20 1 is the still fallback.
+Note: VIDEO · 30s · tablet screen recording: open the symbol editor, go to AI Generate, type "red kite", choose Storybook, tap Generate, the picture lands in My Images, tap Add to symbol, then Save. Screenshot 2026-11-08 at 01.55.20 1 is the still fallback.
 
 #### Languages
 
@@ -414,7 +414,7 @@ Languages on different profiles are independent of each other, so a student can 
 
 Media: new
 Caption: Switching to a student who speaks Hindi
-Note: VIDEO · 10s · tablet screen recording: switch the view to a student set to Hindi, and the app's words, the symbol labels and the voice all change, then tap a symbol and it speaks in Hindi. image 8 and Screenshot 2026-11-07 at 14.27.57 1 are the still fallbacks.
+Note: VIDEO · 15s · tablet screen recording: switch the view to a student set to Hindi, and the app's words, the symbol labels and the voice all change, then tap a symbol and it speaks in Hindi. image 8 and Screenshot 2026-11-07 at 14.27.57 1 are the still fallbacks.
 
 Group: Running it
 
@@ -428,7 +428,7 @@ Themes and languages can be published and unpublished. There's a pipeline to tra
 
 Media: new
 Caption: The admin dashboard
-Note: VIDEO · 10s · laptop screen recording: the Overview numbers, then the Languages page, then Symbols, search "go" and open its connected words. Stay off the Users page, which shows email addresses. Screenshot 2026-11-08 at 02.24.15 1 is the still fallback.
+Note: VIDEO · 20s · laptop screen recording: the Overview numbers, then the Languages page, then Symbols, search "go" and open its connected words. Stay off the Users page, which shows email addresses. Screenshot 2026-11-08 at 02.24.15 1 is the still fallback.
 
 ## How I built it
 
