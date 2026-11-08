@@ -8,3 +8,12 @@ I cut the app down to search only — you type a word, results appear as you typ
 
 Media: search-results.mp4
 Caption: Typing a word and tapping a result
+
+## What I learned
+
+Label: Learnings
+Headline: What I would change
+
+### The honest bit
+
+Parents wanted to know where things live, so I made that the whole point of the redesign.
