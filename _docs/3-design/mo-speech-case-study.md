@@ -282,11 +282,11 @@ I designed them with Figma shaders, then converted them to WebGL2. I made a skil
 
 Media: new
 Caption: Water, on Pro
-Note: VIDEO · 10s · tablet screen recording: Home on Water, no taps, calm water ripples and bobs behind the frosted-glass cards. Water 1 is the still fallback. Record on a local or dev build, because only Space is published so far.
+Note: VIDEO · 10s · tablet screen recording: Home on Water, no taps, calm water ripples and bobs behind the frosted-glass cards. Water 1 is the still fallback. Record on the dev build, where all four animated themes are live.
 
 Media: new
 Caption: Clouds, on Pro
-Note: VIDEO · 10s · tablet screen recording: Home on Clouds, no taps, soft clouds drift slowly and sunbeams break through the gaps. Record on a local or dev build, because only Space is published so far.
+Note: VIDEO · 10s · tablet screen recording: Home on Clouds, no taps, soft clouds drift slowly and sunbeams break through the gaps. Record on the dev build, where all four animated themes are live.
 
 Media: new
 Caption: Space, on Max
@@ -294,7 +294,7 @@ Note: VIDEO · 10s · tablet screen recording: Home on Space, no taps, stars str
 
 Media: new
 Caption: Electric Midnight, on Max
-Note: VIDEO · 10s · tablet screen recording: Home on Electric Midnight, no taps, storm clouds drift across a midnight sky while green lightning races from edge to edge. Record on a local or dev build, because only Space is published so far.
+Note: VIDEO · 10s · tablet screen recording: Home on Electric Midnight, no taps, storm clouds drift across a midnight sky while green lightning races from edge to edge. Record on the dev build, where all four animated themes are live.
 
 ## Features
 
