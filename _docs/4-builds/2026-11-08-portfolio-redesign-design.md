@@ -69,8 +69,9 @@ Every section has the same anatomy:
 
 ### Opening
 
-- **Hero:** "Mo Speech", and one line: *An AAC app I built for my son, and for
-  every family who needs a voice.* Media: 10-second silent loop of the app on
+- **Hero:** "Mo Speech", and one line: *The modern AAC solution designed for
+  families all across the world* (Mo's wording: founder, designer and engineer
+  first, the father's story in the overview). Media: 10-second silent loop of the app on
   the Space theme.
 - **Meta row:** Role (solo: research, design, build) · Timeline (MVP 2025, full
   build April to November 2026) · Tools (Figma, Claude Code, Next.js, Convex).
@@ -93,8 +94,8 @@ Every section has the same anatomy:
 | Stage | Headline | Media |
 |---|---|---|
 | Research | Every app hides its navigation among the symbols | Gallery: TD Snap, Awaaz, Proloquo2Go; three insights |
-| Research | Sentences are built from chunks, like Lego | GLP reading; the SLT demo |
 | Define | A dashboard, like the apps they already use | Gallery: wireframe → Figma → Claude Design → final |
+| Test | Sentences are built from chunks, like Lego | A live demo of an early full build to an SLT gave the ideas for phrases and connected words; then GLP reading. No capture of the demo |
 | Ideate | Storyboard 2: modelling across two devices, then building and playing a sentence | Six drawn panels |
 | Design | Made to be looked at for a long time | Gallery of the six default themes; animated-theme videos |
 | Prototype | Features, in four groups (below) | One short video each |
@@ -143,7 +144,7 @@ Source of truth for every product claim:
 
 - Lives in `3-design/mo-speech-case-study.md`, the single source of text. Figma
   copies it now; the code reads it later.
-- Mo's voice: first person, plain words, real numbers, his son as the reason,
+- Mo's voice: first person, plain words, real numbers, his son as the origin (not the headline),
   British spelling. Grammar fixed and explanations sharpened, but it must read
   as human-written, not polished to perfection.
 

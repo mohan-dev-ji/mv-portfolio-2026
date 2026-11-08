@@ -6,7 +6,7 @@ Label: Hero
 
 ### Mo Speech
 
-One-liner: An AAC app I built for my son, and for every family who needs a voice.
+One-liner: The modern AAC solution designed for families all across the world
 
 Role: Solo. Research, design and build
 Timeline: MVP 2025 [CHECK: dates] · Full build April to November 2026
@@ -26,7 +26,7 @@ Label: Overview
 
 Mo Speech is an AAC app born out of my own experiences as a father of a non-verbal autistic child, who was given a device by his school. AAC stands for Augmentative and Alternative Communication, which covers all the tools and strategies used to supplement or replace speech for people with communication difficulties.
 
-When someone is first introduced to AAC, the first step is called modelling. The instructor points to an object in real life, then shows their student how to navigate to its symbol in the app, so the student learns the motor skills they need for independent use.
+When someone is first introduced to AAC, the first step is called modelling. The instructor points to an object in real life, then shows their student how to navigate to its symbol in the app, so the student builds the motor planning they need for independent use.
 
 Media: Home 1
 Caption: Home in the full Mo Speech app
@@ -72,7 +72,7 @@ The same problems were still there, though. So I started to ideate on how I coul
 
 Media: new
 Caption: At an AAC training session
-Note: STILL · a photo from one of the AAC training sessions: the training materials or the room, no faces. [CHECK: photo exists]
+Note: STILL · placeholder for now. Take a photo at the next AAC training session: the training materials or the room, no faces.
 
 ## Cutting it down
 
@@ -128,7 +128,7 @@ Note: VIDEO · 10s · phone screen recording: open the MVP, tap the mic, say "do
 
 One-liner: Type any word, and the results appear as you type.
 
-The results come from a library of 58,000 SymbolStix symbols [CHECK: 58,000 symbols]. Tap a symbol to add it to your sequence, and its audio plays automatically. So the user can choose to search by typing or by voice.
+The results come from a library of 58,000 SymbolStix symbols. Tap a symbol to add it to your sequence, and its audio plays automatically. So the user can choose to search by typing or by voice.
 
 Media: new
 Caption: Typing a word in the MVP
@@ -158,7 +158,7 @@ I did get some pushback about the wording. I was using "AAC" in the copy, but th
 
 Media: new
 Caption: Posts on LinkedIn and Facebook
-Note: GALLERY · 4 images, click through: your best MVP posts from LinkedIn and Facebook groups, with other people's names and photos cropped out. [CHECK: which posts]
+Note: GALLERY · 4 images, click through: placeholder slots for now. You're taking screenshots of the MVP posts on LinkedIn and in Facebook groups. Crop out other people's names and photos.
 
 Media: Screenshot 2026-11-02 at 23.27.39 1
 Caption: The MVP admin dashboard, 166 users
@@ -170,7 +170,7 @@ Label: Iterate
 
 ### "It isn't AAC." They were right.
 
-One-liner: The main criticism was that Mo Speech wasn't AAC, and it didn't teach motor skills.
+One-liner: The main criticism was that Mo Speech wasn't AAC, and it didn't teach motor planning.
 
 With the MVP, I built a live product and got real user feedback. It also got me thinking about how to solve the navigation issue, so Mo Speech could become a real AAC app that competes with the best apps on the market.
 
@@ -202,27 +202,7 @@ Headline: Current AAC users seem to be wizards on YouTube, so they already find 
 
 Media: image 3, image 4, image 6
 Caption: TD Snap, Awaaz and Proloquo2Go
-Note: GALLERY · 3 images, click through: image 3, TD Snap; image 4, Awaaz; image 6, Proloquo2Go. [CHECK: which image is which app, and the spelling: the app is usually written "Avaz"]
-
-## Gestalt language
-
-Label: Research
-
-### Sentences are built from chunks, like Lego
-
-One-liner: Several words baked into one tappable phrase would mean a lot less cognitive load.
-
-After a live demo with one of the Speech and Language Therapists from the MVP, I started researching Gestalt Language Processing. Here I learnt about the reusable chunks that make up a sentence. Many autistic children learn whole phrases first, then break them down and build their own sentences from the pieces.
-
-Reading the literature was a profound moment, because I could picture it as a feature I'd use. An idea started to emerge about sentences being built like blocks of Lego.
-
-Media: Screenshot 2026-11-06 at 10.57.42 1
-Caption: Reading about Gestalt Language Processing
-Note: STILL · the existing Screenshot 2026-11-06 at 10.57.42 1 layer, from the Gestalt Language Processing research.
-
-Media: new
-Caption: The live demo with a Speech and Language Therapist
-Note: STILL · a screenshot or photo from the live demo, with no faces unless the therapist agrees. [CHECK: a capture of the demo exists]
+Note: GALLERY · 3 images, click through: image 3, TD Snap; image 4, Awaaz; image 6, Proloquo2Go.
 
 ## A new navigation
 
@@ -230,7 +210,7 @@ Label: Define
 
 ### A dashboard, like the apps they already use
 
-One-liner: The only way to find out if it would work was to build it and launch it to the public.
+One-liner: The only way to find out if it would work was to build it and test it.
 
 With these insights, I began to ask myself why a modern AAC app couldn't use the dashboard framing of modern software. I wanted the new navigation as simple as possible. My wireframes had only Home, Search and Categories on the sidebar, and each category had a mode switch for lists, sentences and boards.
 
@@ -239,6 +219,22 @@ After building a working prototype, I made a major architectural decision. Lists
 Media: Categories 1, Categories - Hand 1, Screenshot 2026-11-06 at 10.06.58 1, Categories final 1
 Caption: From wireframe to final design
 Note: GALLERY · 4 images, click through: Categories 1, the first wireframe, with Home, Search and Categories on the sidebar; Categories - Hand 1, the design in Figma; Screenshot 2026-11-06 at 10.06.58 1, the polish in Claude Design; Categories final 1, the final version.
+
+## Gestalt language
+
+Label: Test
+
+### Sentences are built from chunks, like Lego
+
+One-liner: Several words baked into one tappable phrase would mean a lot less cognitive load.
+
+Once the new navigation was working, I gave a live demo of an early version to one of the Speech and Language Therapists onboarded from the MVP. That session is where the ideas for phrases and connected words came from.
+
+Afterwards I started researching Gestalt Language Processing. Many autistic children learn whole phrases first, then break them into reusable chunks and build their own sentences from the pieces. Reading it was a profound moment, because I could picture it as a feature I'd use, with sentences built like blocks of Lego.
+
+Media: Screenshot 2026-11-06 at 10.57.42 1
+Caption: Reading about Gestalt Language Processing
+Note: STILL · the existing Screenshot 2026-11-06 at 10.57.42 1 layer, from the Gestalt Language Processing research.
 
 ## Storyboard
 
@@ -268,7 +264,7 @@ I designed six default themes in Figma, three light and three dark, to make sure
 
 Media: Home-v2-2 1, Home-v2 1, Home-v2-4 1, Home-v2-1 1, Home-v2-5 1, Home-v2-3 1
 Caption: The six default themes, three light and three dark
-Note: GALLERY · 6 images, click through: Home on each default theme, the light Amber, Fuchsia and Lime, and the dark Classic, Rose and Sky. [CHECK: which layer is which theme]
+Note: GALLERY · 6 images, click through: Home on each default theme, the light Amber, Fuchsia and Lime, and the dark Classic, Rose and Sky. You're relabelling the Home-v2 layers to match.
 
 Media: Screenshot 2026-11-06 at 11.39.01 1
 Caption: The theme variables in Figma
@@ -360,7 +356,7 @@ Headline: Views keep the adult and the student apart
 
 One-liner: The instructor sees and controls everything. The student sees only what's right for them.
 
-One Mo Speech account serves two very different people: the adult who sets things up, and the student who uses them. Keeping the student's view simple helps reduce cognitive overload, and lets the instructor introduce new concepts one step at a time.
+One Mo Speech account serves two very different people: the adult who sets things up, and the student who uses them. Keeping the student's view simple helps reduce cognitive overload, and lets the instructor introduce new concepts one step at a time without touching the student's device.
 
 Media: new
 Caption: Switching to a student's view
