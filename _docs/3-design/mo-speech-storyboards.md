@@ -43,10 +43,10 @@ Caption: He looks from the phone to the dog.
 Draw: Wide shot as in Panel 1. Child in profile on the left, head turned towards the dog on the right, with a faint dotted line from the phone (held low in the parent's hand, screen not shown) to the child's eyes and on to the dog. Parent smiling beside the child. Dog in the same pose as Panel 1.
 
 Panel 6
-Scene: The parent types "big", taps it so the top line reads "big dog", and plays the two-word sequence.
+Scene: The parent clears the top line, types "big", taps it, taps "dog" again so the top line reads "big dog", and plays the two words in order.
 Screen: MVP results, top line with two blocks
-Caption: Then "big dog", played as one line.
-Draw: Over-the-shoulder shot of the parent holding the phone so the child can see it, child leaning in on the right. Phone portrait. Placeholder on screen labelled "MVP search, top line": a search bar, a results grid with one empty tile marked "big symbol", a top line strip holding two empty blocks, and a play button. Parent's thumb on the play button. Dog small in the background.
+Caption: Then "big dog", played in order.
+Draw: Over-the-shoulder shot of the parent holding the phone so the child can see it, child leaning in on the right. Phone portrait. Placeholder on screen labelled "MVP search, top line": a search bar, a results grid with empty tiles marked "big symbol" and "dog symbol", a top line strip holding two empty blocks, and a play button. Parent's thumb on the play button. Dog small in the background.
 
 ---
 
