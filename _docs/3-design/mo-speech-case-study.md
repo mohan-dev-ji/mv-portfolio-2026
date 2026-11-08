@@ -40,7 +40,9 @@ Label: Problem
 
 ### "We don't have an iPad, so we can't use it."
 
-After attending numerous coffee mornings at my son's school, I began to realise AAC was getting a negative reputation amongst the parents. The most common complaint I heard was about not having an iPad. Some thought it was great, but many were bewildered by modelling. I found the root of the problem in the navigation.
+After attending numerous coffee mornings at my son's school, I began to realise AAC was getting a negative reputation amongst the parents. Some parents thought it was great, but quite a few were bewildered by the modelling process. I found the root of the problem in the app's navigation.
+
+Each page has symbols, and buttons that look like symbols but open other pages. When you know where something is, it's easy. Learning where new symbols live is very hard, especially in a real-life moment where speed matters. It's hard for parents to work out, let alone teach to their children.
 
 #### Problem 1
 
@@ -94,7 +96,7 @@ Label: Ideate
 
 ### A word, in the moment
 
-This is the moment the MVP was built for. A child sees something out in the world, and the parent needs its symbol straight away.
+One-liner: The symbol has to come up while the child is still looking at the dog.
 
 Media: new
 Caption: A word at the park
@@ -156,7 +158,7 @@ I did get some pushback about the wording. I was using "AAC" in the copy, but th
 
 Media: new
 Caption: Posts on LinkedIn and Facebook
-Note: GALLERY · 4 images, click through: screenshots of four MVP posts, two from LinkedIn and two from Facebook groups, with other people's names and photos cropped out. [CHECK: which posts]
+Note: GALLERY · 4 images, click through: your best MVP posts from LinkedIn and Facebook groups, with other people's names and photos cropped out. [CHECK: which posts]
 
 Media: Screenshot 2026-11-02 at 23.27.39 1
 Caption: The MVP admin dashboard, 166 users
