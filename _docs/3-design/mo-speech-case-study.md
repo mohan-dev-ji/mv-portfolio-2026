@@ -58,7 +58,7 @@ Headline: Modelling is difficult, and it's commonly known as an area where new u
 
 Media: new
 Caption: Three problems I kept hearing about
-Note: STILL · three problem cards side by side: Problem 1 platform lock-in, Problem 2 navigation, Problem 3 modelling is hard. Each card carries its headline line.
+Note: STILL · three problem cards, stacked: Problem 1 platform lock-in, Problem 2 navigation, Problem 3 modelling is hard. Each card carries its headline line.
 
 ## Learning modelling
 
