@@ -100,7 +100,7 @@ One-liner: The symbol has to come up while the child is still looking at the dog
 
 Media: new
 Caption: A word at the park
-Note: GALLERY · 6 images, click through: six drawn storyboard panels. At the park, the child points at a dog; the parent takes out their phone, taps the mic and says "dog"; the dog symbol comes up and the parent taps it, so it plays and lands in the top line; the parent taps play and the dog fills the screen; the child looks from the phone to the dog; the parent clears the top line, types "big", taps it, taps "dog" again so it reads "big dog", and plays the two words in order.
+Note: GALLERY · 6 images, click through: six drawn storyboard panels. At the park, the child points at a dog; the parent takes out their phone, taps the mic and says "dog"; the dog symbol comes up and the parent taps it, so it plays and lands in the top line; the parent taps play and the dog fills the screen; the child looks from the phone to the dog; the parent clears the top line, types "small", taps it, taps "dog" again so it reads "small dog", and plays the two words in order.
 
 ## What I built
 
