@@ -246,7 +246,7 @@ One-liner: The student finds the word on their own tablet, while the instructor 
 
 Media: new
 Caption: Modelling a snack in the kitchen
-Note: GALLERY · 6 images, click through: six drawn storyboard panels. In the kitchen, the instructor opens Food on their phone, taps Model and picks "snack"; the student's tablet goes to Home, the page dims and the Categories button lights up with a pointer; the student taps Categories, then the Food tile; the student finds "snack" and taps it, while the instructor's phone follows live; with the talker on, the student taps "I want" from Phrases, then "snack"; they play the sentence and tap the excited face.
+Note: GALLERY · 6 images, click through: six drawn storyboard panels. In the kitchen, the instructor picks "snack" on their phone and starts the session while the student waits at the table; the student's tablet dims and the Categories button glows; the student taps Categories, then Food & Drink; the student finds "snack" and taps it, while the instructor watches live on their phone; "snack" lands in the top line and they play it; then they tap the excited face.
 
 ## Look and feel
 
