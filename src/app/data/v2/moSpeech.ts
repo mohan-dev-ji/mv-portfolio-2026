@@ -40,7 +40,7 @@ export const caseStudyHero = {
   oneLiner: "The modern AAC solution designed for families all across the world",
   meta: [
     { label: "Role", value: "Solo. Research, design and build" },
-    { label: "Timeline", value: "MVP 2025 · Full build April to November 2026" },
+    { label: "Timeline", value: "MVP January 2026 · Full build April to November 2026" },
     { label: "Tools", value: "Figma, Claude Code, Next.js, Convex" },
   ],
 };
