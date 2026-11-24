@@ -49,6 +49,7 @@ export type CaseSection = {
 export const caseStudyHero = {
   title: "Mo Speech",
   oneLiner: "The modern AAC solution designed for families all across the world",
+  reel: video("showcase-reel", "A short silent tour of the full Mo Speech build, then the MVP"),
   meta: [
     { label: "Role", value: "Solo. Research, design and build" },
     { label: "Timeline", value: "MVP January 2026 · Full build April to November 2026" },

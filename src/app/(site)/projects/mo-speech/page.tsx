@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CaseStudySection } from "@/app/components/v2/CaseStudyBlocks";
+import MediaBlock from "@/app/components/v2/MediaBlock";
 import StickySectionNav from "@/app/components/v2/StickySectionNav";
 import WorkLink from "@/app/components/v2/WorkLink";
 import { caseStudyHero, caseStudyNav, caseStudySections } from "@/app/data/v2/moSpeech";
@@ -41,8 +42,7 @@ export default function MoSpeechCaseStudy() {
                 </div>
               ))}
             </dl>
-            {/* The showcase reel goes here once its cut list is approved. */}
-            <div className="aspect-media w-full rounded-v2-md bg-hairline" />
+            <MediaBlock {...caseStudyHero.reel} />
           </section>
 
           {caseStudySections.map((section) => (

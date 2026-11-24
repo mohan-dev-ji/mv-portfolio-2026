@@ -171,25 +171,27 @@
   .typed-line[data-phase="fading"] {
     opacity: 0;
   }
-  .typed-caret-anchor {
+  .typed-char {
     position: relative;
-    display: inline-block;
-    width: 0;
-    height: 1em;
-    vertical-align: -0.12em;
   }
-  .typed-caret-anchor::after {
+  .typed-caret::after {
     content: "";
     position: absolute;
+    visibility: visible;
     inset-block: 0;
-    left: 2px;
+    left: 100%;
+    margin-left: 2px;
     width: 2px;
     background: var(--colour-ink);
   }
-  .typed-line[data-phase="paused"] .typed-caret-anchor::after {
+  .typed-caret-start::after {
+    left: 0;
+    margin-left: 0;
+  }
+  .typed-line[data-phase="paused"] .typed-caret::after {
     animation: typed-caret 900ms steps(1) infinite;
   }
-  .typed-line[data-phase="fading"] .typed-caret-anchor::after {
+  .typed-line[data-phase="fading"] .typed-caret::after {
     opacity: 0;
   }
 }

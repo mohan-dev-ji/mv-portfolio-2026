@@ -8,6 +8,6 @@ export const siteLinks = {
 
 export const heroLines = [
   { before: "I design ", accent: "intuitive", after: " interfaces" },
-  { before: "I turn designs into prototypes and ", accent: "live", after: " products" },
+  { before: "I turn designs into ", accent: "live", after: " products" },
   { before: "I iterate until we ", accent: "solve", after: " the problem" },
 ];

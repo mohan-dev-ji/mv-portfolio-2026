@@ -11,26 +11,30 @@ const FADE_MS = 260;
 
 type Phase = "typing" | "paused" | "fading";
 
+const fullText = (line: HeroLine) => `${line.before}${line.accent}${line.after}`;
+
+/**
+ * Every character stays in the layout and is only revealed, so a centred line
+ * keeps the same left edge from the first character to the last.
+ */
 function LineText({ line, count }: { line: HeroLine; count: number }) {
-  const { before, accent, after } = line;
-  const typedBefore = before.slice(0, count);
-  const typedAccent = accent.slice(0, Math.max(0, count - before.length));
-  const typedAfter = after.slice(0, Math.max(0, count - before.length - accent.length));
-  const restBefore = before.slice(typedBefore.length);
-  const restAccent = accent.slice(typedAccent.length);
-  const restAfter = after.slice(typedAfter.length);
+  const accentStart = line.before.length;
+  const accentEnd = accentStart + line.accent.length;
 
   return (
     <>
-      {typedBefore}
-      <span className="text-accent">{typedAccent}</span>
-      {typedAfter}
-      <span className="typed-caret-anchor" />
-      <span className="invisible">
-        {restBefore}
-        {restAccent}
-        {restAfter}
-      </span>
+      {Array.from(fullText(line)).map((char, index) => {
+        const classes = ["typed-char"];
+        if (index >= count) classes.push("invisible");
+        if (index >= accentStart && index < accentEnd) classes.push("text-accent");
+        if (index === count - 1) classes.push("typed-caret");
+        if (count === 0 && index === 0) classes.push("typed-caret", "typed-caret-start");
+        return (
+          <span key={index} className={classes.join(" ")}>
+            {char}
+          </span>
+        );
+      })}
     </>
   );
 }
@@ -41,7 +45,7 @@ export default function TypedHeroLine({ lines }: { lines: HeroLine[] }) {
   const [phase, setPhase] = useState<Phase>("typing");
 
   const line = lines[index];
-  const length = line.before.length + line.accent.length + line.after.length;
+  const length = fullText(line).length;
 
   useEffect(() => {
     if (prefersReducedMotion()) return;
@@ -64,24 +68,19 @@ export default function TypedHeroLine({ lines }: { lines: HeroLine[] }) {
     return () => clearTimeout(timer);
   }, [phase, count, length, lines.length]);
 
-  const fullText = (l: HeroLine) => `${l.before}${l.accent}${l.after}`;
-
   return (
     <div className="type-typed w-full max-w-column text-ink">
       <p className="sr-only">{lines.map((l) => `${fullText(l)}.`).join(" ")}</p>
 
-      {/* Animated line. Every line is stacked invisibly to reserve the final size. */}
-      <div aria-hidden className="grid justify-center motion-reduce:hidden">
+      {/* Animated line. Every line is stacked invisibly to reserve the final height. */}
+      <div aria-hidden className="grid w-full text-center motion-reduce:hidden">
         {lines.map((l) => (
           <span key={l.accent} className="invisible col-start-1 row-start-1">
             {fullText(l)}
           </span>
         ))}
-        <span
-          data-phase={phase}
-          className="typed-line col-start-1 row-start-1 w-0 min-w-full text-left"
-        >
-          <LineText line={line} count={count} />
+        <span data-phase={phase} className="typed-line col-start-1 row-start-1 self-start">
+          <LineText key={index} line={line} count={count} />
         </span>
       </div>
 
