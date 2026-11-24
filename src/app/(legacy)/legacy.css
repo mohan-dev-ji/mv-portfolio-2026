@@ -1,0 +1,31 @@
+/* Tokens for the previous site, scoped so they cannot affect the new one. */
+
+.legacy {
+  --color-bg:       theme('colors.zinc.200');
+  --color-primary:  theme('colors.zinc.800');
+  --color-secondary:theme('colors.zinc.500');
+  --color-muted:    theme('colors.zinc.400');
+  --color-accent:       theme('colors.lime.600');
+  --color-accent-hover: theme('colors.lime.400');
+  --color-border:   theme('colors.zinc.300');
+  --color-card:     theme('colors.zinc.100');
+  --color-image-bg: theme('colors.zinc.300');
+  --color-btn-text: theme('colors.gray.900');
+  --color-input-bg: #FBFBFB;
+
+  @apply font-mono bg-bg text-primary overflow-x-hidden;
+}
+
+.dark .legacy {
+  --color-bg:       theme('colors.zinc.900');
+  --color-primary:  theme('colors.zinc.300');
+  --color-secondary:theme('colors.zinc.400');
+  --color-muted:    theme('colors.zinc.500');
+  --color-accent:       theme('colors.lime.500');
+  --color-accent-hover: theme('colors.lime.400');
+  --color-border:   theme('colors.zinc.700');
+  --color-card:     theme('colors.zinc.800');
+  --color-image-bg: theme('colors.zinc.600');
+  --color-btn-text: theme('colors.gray.900');
+  --color-input-bg: #FBFBFB;
+}

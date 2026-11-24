@@ -11,7 +11,10 @@ import ImageText from "@/app/components/project/ImageText";
 import ProjectCard from "@/app/components/ui/ProjectCard";
 
 export function generateStaticParams() {
-  return projectDetails.map((p) => ({ slug: p.slug }));
+  // /projects/mo-speech is now served by the new case study route.
+  return projectDetails
+    .filter((p) => p.slug !== "mo-speech")
+    .map((p) => ({ slug: p.slug }));
 }
 
 export default async function ProjectDetailPage({

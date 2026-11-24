@@ -2,44 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Design tokens ────────────────────────────────────── */
+/* ── Portfolio v2 tokens (Figma collection "Portfolio v2") ── */
 
 :root {
-  --color-bg:       theme('colors.zinc.200');
-  --color-primary:  theme('colors.zinc.800');
-  --color-secondary:theme('colors.zinc.500');
-  --color-muted:    theme('colors.zinc.400');
-  --color-accent:       theme('colors.lime.600');
-  --color-accent-hover: theme('colors.lime.400');
-  --color-border:   theme('colors.zinc.300');
-  --color-card:     theme('colors.zinc.100');
-  --color-image-bg: theme('colors.zinc.300');
-  --color-btn-text: theme('colors.gray.900');
-  --color-input-bg: #FBFBFB;
+  /* Colour */
+  --colour-bg: #fafaf7;
+  --colour-surface: #ffffff;
+  --colour-ink: #18181b;
+  --colour-grey: #71717a;
+  --colour-hairline: #e4e4e7;
+  --colour-note: #ea580c;
+  --colour-stage-from: #f4f4f5;
+  --colour-stage-to: #d4d4d8;
+  --colour-accent: #ea580c;
+  --color-accent: var(--colour-accent);
+
+  /* Space */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-160: 160px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* Stroke */
+  --stroke-hairline: 1px;
+  --stroke-drawing: 1.5px;
+
+  /* Layout */
+  --layout-page: 1728px;
+  --layout-column: 1088px;
+  --layout-sidenav: 220px;
+  --layout-content: 760px;
+  --layout-gutter: var(--space-16);
+
+  /* Type */
+  --size-display: 64px;
+  --size-headline: 40px;
+  --size-subhead: 28px;
+  --size-body: 19px;
+  --size-body-small: 16px;
+  --size-nav: 16px;
+  --size-caption: 14px;
+  --size-label: 13px;
+  --size-note: 13px;
+  --leading-display: 68px;
+  --leading-headline: 46px;
+  --leading-subhead: 34px;
+  --leading-body: 30px;
+  --leading-body-small: 25px;
+  --leading-nav: 24px;
+  --leading-caption: 20px;
+  --leading-label: 18px;
+  --leading-note: 18px;
+  --tracking-label: 0.08em;
 }
 
-.dark {
-  --color-bg:       theme('colors.zinc.900');
-  --color-primary:  theme('colors.zinc.300');
-  --color-secondary:theme('colors.zinc.400');
-  --color-muted:    theme('colors.zinc.500');
-  --color-accent:       theme('colors.lime.500');
-  --color-accent-hover: theme('colors.lime.400');
-  --color-border:   theme('colors.zinc.700');
-  --color-card:     theme('colors.zinc.800');
-  --color-image-bg: theme('colors.zinc.600');
-  --color-btn-text: theme('colors.gray.900');
-  --color-input-bg: #FBFBFB;
+/* The frames are desktop only, so smaller screens step the large type down. */
+@media (max-width: 767px) {
+  :root {
+    --size-display: 44px;
+    --leading-display: 48px;
+    --size-headline: 32px;
+    --leading-headline: 38px;
+    --size-subhead: 24px;
+    --leading-subhead: 30px;
+    --size-body: 17px;
+    --leading-body: 27px;
+  }
 }
 
-/* ── Base ────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  :root {
+    --layout-gutter: var(--space-32);
+  }
+}
+
+/* ── Base ─────────────────────────────────────────────── */
 
 @layer base {
-  html {
-    @apply scroll-smooth overflow-x-hidden;
+  body {
+    @apply bg-page font-sans text-ink antialiased;
+    font-variation-settings: "opsz" 14;
+  }
+}
+
+/* ── Text styles (Figma v2/*) and layout widths ───────── */
+
+@layer components {
+  .type-display {
+    @apply font-serif font-normal;
+    font-size: var(--size-display);
+    line-height: var(--leading-display);
+  }
+  .type-headline {
+    @apply font-serif font-normal;
+    font-size: var(--size-headline);
+    line-height: var(--leading-headline);
+  }
+  .type-subhead {
+    @apply font-serif font-normal;
+    font-size: var(--size-subhead);
+    line-height: var(--leading-subhead);
+  }
+  .type-label {
+    @apply font-sans font-medium uppercase;
+    font-size: var(--size-label);
+    line-height: var(--leading-label);
+    letter-spacing: var(--tracking-label);
+  }
+  .type-body {
+    @apply font-sans font-normal;
+    font-size: var(--size-body);
+    line-height: var(--leading-body);
+  }
+  .type-body-small {
+    @apply font-sans font-normal;
+    font-size: var(--size-body-small);
+    line-height: var(--leading-body-small);
+  }
+  .type-caption {
+    @apply font-sans font-normal;
+    font-size: var(--size-caption);
+    line-height: var(--leading-caption);
+  }
+  .type-nav {
+    @apply font-sans font-normal;
+    font-size: var(--size-nav);
+    line-height: var(--leading-nav);
   }
 
-  body {
-    @apply font-mono bg-bg text-primary overflow-x-hidden;
+  .layout-column {
+    width: min(100% - 2 * var(--layout-gutter), var(--layout-column));
+    margin-inline: auto;
   }
 }
