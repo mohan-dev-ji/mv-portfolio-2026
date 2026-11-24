@@ -4,7 +4,7 @@ import Stage, { type StageProps } from "./Stage";
 
 export type MediaBlockProps = { caption?: string } & (
   | ({ kind: "still" } & StageProps)
-  | { kind: "video"; src: string; poster: string; alt: string }
+  | { kind: "video"; src: string; poster: string; alt: string; hasAudio?: boolean }
   | { kind: "diagram"; src: string; alt: string }
 );
 
@@ -33,7 +33,7 @@ export default function MediaBlock(props: MediaBlockProps) {
           />
         )}
         {props.kind === "video" && (
-          <LazyVideo src={props.src} poster={props.poster} label={props.alt} />
+          <LazyVideo src={props.src} poster={props.poster} label={props.alt} hasAudio={props.hasAudio} />
         )}
         {props.kind === "diagram" && (
           <Image

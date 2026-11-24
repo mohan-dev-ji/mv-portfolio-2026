@@ -3,12 +3,23 @@ import type { StageProps } from "@/app/components/v2/Stage";
 import type { SectionNavEntry } from "@/app/components/v2/StickySectionNav";
 
 const img = (name: string) => `/images/v2/mo-speech/${name}.webp`;
+const clipsWithAudio = new Set([
+  "talker-dropdown",
+  "sentences",
+  "tone",
+  "views",
+  "modelling",
+  "connected-words",
+  "symbol-editor",
+  "languages",
+]);
 const video = (name: string, alt: string, caption?: string): MediaBlockProps => ({
   kind: "video",
   src: `${process.env.NEXT_PUBLIC_MEDIA_BASE_URL ?? ""}/video/mo-speech/${name}.mp4`,
   poster: `/images/v2/mo-speech/posters/${name}.webp`,
   alt,
   caption,
+  hasAudio: clipsWithAudio.has(name),
 });
 
 export type Block =
