@@ -79,6 +79,7 @@ export default {
         s64:  "var(--space-64)",
         s96:  "var(--space-96)",
         s160: "var(--space-160)",
+        nav:  "var(--layout-nav)",
       },
       borderWidth: {
         hairline: "var(--stroke-hairline)",

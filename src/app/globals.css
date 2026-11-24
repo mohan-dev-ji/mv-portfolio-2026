@@ -16,6 +16,7 @@
   --colour-stage-to: #d4d4d8;
   --colour-accent: #ea580c;
   --color-accent: var(--colour-accent);
+  --gradient-gallery: linear-gradient(to left, #fd9a00, #ffeaab);
 
   /* Space */
   --space-4: 4px;
@@ -45,8 +46,13 @@
   --layout-sidenav: 220px;
   --layout-content: 760px;
   --layout-gutter: var(--space-16);
+  --layout-nav: 98px;
+  --layout-portrait: 424px;
+  --layout-case-top: var(--space-48);
 
   /* Type */
+  --size-typed: clamp(26px, 3.1vw, 44px);
+  --leading-typed: 1.25;
   --size-display: 64px;
   --size-headline: 40px;
   --size-subhead: 28px;
@@ -85,6 +91,7 @@
 @media (min-width: 768px) {
   :root {
     --layout-gutter: var(--space-32);
+    --layout-case-top: 84px;
   }
 }
 
@@ -142,8 +149,58 @@
     line-height: var(--leading-nav);
   }
 
+  .type-typed {
+    @apply font-sans font-normal;
+    font-size: var(--size-typed);
+    line-height: var(--leading-typed);
+  }
+
   .layout-column {
     width: min(100% - 2 * var(--layout-gutter), var(--layout-column));
     margin-inline: auto;
+  }
+
+  .bg-stage-gallery {
+    background-image: var(--gradient-gallery);
+  }
+
+  /* Typed hero line */
+  .typed-line {
+    transition: opacity 260ms ease-out;
+  }
+  .typed-line[data-phase="fading"] {
+    opacity: 0;
+  }
+  .typed-caret-anchor {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 1em;
+    vertical-align: -0.12em;
+  }
+  .typed-caret-anchor::after {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    left: 2px;
+    width: 2px;
+    background: var(--colour-ink);
+  }
+  .typed-line[data-phase="paused"] .typed-caret-anchor::after {
+    animation: typed-caret 900ms steps(1) infinite;
+  }
+  .typed-line[data-phase="fading"] .typed-caret-anchor::after {
+    opacity: 0;
+  }
+}
+
+@keyframes typed-caret {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
   }
 }
