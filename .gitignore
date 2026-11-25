@@ -38,3 +38,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original social post screenshots stay local (unblurred personal details)
+/_docs/3-design/social-posts/
