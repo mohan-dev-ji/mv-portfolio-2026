@@ -2,8 +2,8 @@ export const siteLinks = {
   email: "mailto:info@mohanveraitch.com",
   linkedin: "https://www.linkedin.com/in/mohan-veraitch-a229a990/",
   youtube: "https://youtube.com/@mo-dev-ui?si=yXvd_yMeqNjuKvCT",
-  // Stays null until the updated CV is approved for publishing.
-  resume: null as string | null,
+  // One-page PDF exported from the two-column CV in Google Docs.
+  resume: "/mohan-veraitch-cv.pdf" as string | null,
 };
 
 export const heroLines = [
